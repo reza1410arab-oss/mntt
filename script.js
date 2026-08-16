@@ -107,13 +107,19 @@ const dataGame = {
     }
 };
 
+
+// ========================================
 // GAME 17 - 36
+// ========================================
+
 for (let i = 17; i <= 36; i++) {
+
     dataGame[i] = {
         nama: `GAME ${i}`,
         saran: [`GAME ${i} - SARAN`],
         pola: [`Pola game ${i}`]
     };
+
 }
 
 
@@ -139,16 +145,31 @@ async function copyTeks(text, button) {
 
     if (!text) return;
 
+    let berhasil = false;
+
     try {
 
-        await navigator.clipboard.writeText(text);
+        if (navigator.clipboard && window.isSecureContext) {
+
+            await navigator.clipboard.writeText(text);
+
+            berhasil = true;
+        }
 
     } catch (error) {
+
+        console.log("Clipboard API gagal:", error);
+    }
+
+
+    if (!berhasil) {
 
         const textarea = document.createElement("textarea");
 
         textarea.value = text;
+
         textarea.style.position = "fixed";
+        textarea.style.top = "0";
         textarea.style.left = "-9999px";
 
         document.body.appendChild(textarea);
@@ -157,22 +178,26 @@ async function copyTeks(text, button) {
         textarea.select();
 
         try {
-            document.execCommand("copy");
-        } catch (e) {
-            console.log("Copy gagal:", e);
+
+            berhasil = document.execCommand("copy");
+
+        } catch (error) {
+
+            console.log("Copy gagal:", error);
         }
 
         textarea.remove();
     }
 
-    if (button) {
+
+    if (button && berhasil) {
 
         const tulisanAwal = button.innerHTML;
 
         button.innerHTML = "COPIED ✔";
         button.disabled = true;
 
-        setTimeout(() => {
+        setTimeout(function () {
 
             button.innerHTML = tulisanAwal;
             button.disabled = false;
@@ -190,16 +215,29 @@ function saranGame(id, button) {
 
     const game = dataGame[id];
 
-    if (!game) return;
+    if (!game) {
+        console.error("Game tidak ditemukan:", id);
+        return;
+    }
+
 
     const card = button.closest(".game-box");
+
+    if (!card) return;
+
+
     const hasil = card.querySelector(".hasil-game");
+
+    if (!hasil) return;
+
 
     const teks = ambilAcak(game.saran);
 
-    // BARU MUNCUL SAAT DIKLIK
+
+    // TAMPILKAN SAAT TOMBOL DIKLIK
     hasil.textContent = teks;
     hasil.style.display = "block";
+
 
     copyTeks(teks, button);
 }
@@ -213,16 +251,29 @@ function polaGame(id, button) {
 
     const game = dataGame[id];
 
-    if (!game) return;
+    if (!game) {
+        console.error("Game tidak ditemukan:", id);
+        return;
+    }
+
 
     const card = button.closest(".game-box");
+
+    if (!card) return;
+
+
     const hasil = card.querySelector(".hasil-game");
+
+    if (!hasil) return;
+
 
     const teks = ambilAcak(game.pola);
 
-    // BARU MUNCUL SAAT DIKLIK
+
+    // TAMPILKAN SAAT TOMBOL DIKLIK
     hasil.textContent = teks;
     hasil.style.display = "block";
+
 
     copyTeks(teks, button);
 }
@@ -236,28 +287,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("gameContainer");
 
+
     if (!container) {
-        console.error("gameContainer tidak ditemukan!");
+
+        console.error("❌ gameContainer tidak ditemukan!");
+
         return;
     }
 
+
+    // Bersihkan container
     container.innerHTML = "";
 
+
+    // Buat game 1 sampai 36
     for (let i = 1; i <= 36; i++) {
 
         const game = dataGame[i];
 
-        if (!game) continue;
+
+        if (!game) {
+
+            console.error("❌ Data game tidak ditemukan:", i);
+
+            continue;
+        }
+
 
         const gameBox = document.createElement("article");
 
         gameBox.className = "game-box";
 
+
         // ========================================
-        // FOTO
+        // PATH FOTO
         // ========================================
 
         const imagePath = `./img/game${i}.jpg`;
+
+
+        // ========================================
+        // ISI KOTAK
+        // ========================================
 
         gameBox.innerHTML = `
 
@@ -299,16 +370,46 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
 
-            <!-- KOSONG SAAT AWAL -->
+            <!-- HASIL DISEMBUNYIKAN SAAT AWAL -->
+
             <div
                 class="hasil-game"
-                style="display:none;"
+                style="display: none;"
             ></div>
 
         `;
 
+
+        // ========================================
+        // CEK FOTO
+        // ========================================
+
+        const img = gameBox.querySelector("img");
+
+
+        img.addEventListener("load", function () {
+
+            console.log(
+                `✅ FOTO GAME ${i} BERHASIL DIMUAT`
+            );
+
+        });
+
+
+        img.addEventListener("error", function () {
+
+            console.error(
+                `❌ FOTO TIDAK DITEMUKAN: ${imagePath}`
+            );
+
+        });
+
+
+        // Masukkan kotak
         container.appendChild(gameBox);
     }
 
+
     console.log("✅ 36 KOTAK GAME BERHASIL DIBUAT");
+
 });
