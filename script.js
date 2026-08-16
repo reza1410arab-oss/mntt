@@ -215,10 +215,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 18
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -247,10 +248,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 20
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -279,10 +281,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 22
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -311,10 +314,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 24
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -343,10 +347,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 26
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -375,10 +380,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 28
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -407,10 +413,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 30
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -439,10 +446,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 32
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -471,10 +479,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 34
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
 
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
@@ -503,11 +512,11 @@ const dataGameLanjutan = {
 
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 36
 
-🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
-
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
         pola: [
             "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
         ]
@@ -522,5 +531,30 @@ const dataGameLanjutan = {
 // ========================================
 
 Object.assign(dataGame, dataGameLanjutan);
+document.addEventListener("DOMContentLoaded", () => {
+    const gameContainer = document.getElementById("gameContainer");
 
+    if (!gameContainer) {
+        console.error("gameContainer tidak ditemukan!");
+        return;
+    }
+
+    gameContainer.innerHTML = "";
+
+    Object.values(dataGame).forEach((game) => {
+        const card = document.createElement("div");
+
+        card.className = "game-card";
+
+        card.innerHTML = `
+            <h2>${game.nama}</h2>
+            <p>${game.saran[0].replace(/\n/g, "<br>")}</p>
+            <p>${game.pola[0]}</p>
+        `;
+
+        gameContainer.appendChild(card);
+    });
+
+    console.log("GAME BERHASIL DIMUAT:", Object.keys(dataGame).length);
+});
 
