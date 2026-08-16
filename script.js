@@ -465,3 +465,4 @@ const imagePath = `./game${i}.jpg`;
     console.log("================================");
 
 });
+console.log("🔥 SCRIPT.JS BERHASIL DIBACA");
