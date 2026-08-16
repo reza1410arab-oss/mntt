@@ -198,8 +198,14 @@ for (let i = 17; i <= 36; i++) {
 
     dataGame[i] = {
         nama: `GAME ${i}`,
-        saran: [`GAME ${i} - SARAN SEMENTARA`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+
+        saran: [
+            `GAME ${i} - SARAN SEMENTARA`
+        ],
+
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     };
 
 }
@@ -215,8 +221,11 @@ function ambilAcak(data) {
         return "";
     }
 
-    return data[Math.floor(Math.random() * data.length)];
+    const index = Math.floor(
+        Math.random() * data.length
+    );
 
+    return data[index];
 }
 
 
@@ -226,36 +235,48 @@ function ambilAcak(data) {
 
 async function copyTeks(text, button) {
 
-    if (!text) return;
+    if (!text) {
+        return;
+    }
 
     let berhasil = false;
 
+
+    // Clipboard API
     try {
 
-        if (navigator.clipboard && window.isSecureContext) {
+        if (
+            navigator.clipboard &&
+            window.isSecureContext
+        ) {
 
             await navigator.clipboard.writeText(text);
 
             berhasil = true;
-
         }
 
     } catch (error) {
 
-        console.log("Clipboard API gagal:", error);
+        console.log(
+            "Clipboard API gagal:",
+            error
+        );
 
     }
 
 
+    // Fallback copy
     if (!berhasil) {
 
-        const textarea = document.createElement("textarea");
+        const textarea =
+            document.createElement("textarea");
 
         textarea.value = text;
 
         textarea.style.position = "fixed";
         textarea.style.left = "-9999px";
         textarea.style.top = "0";
+        textarea.style.opacity = "0";
 
         document.body.appendChild(textarea);
 
@@ -264,33 +285,42 @@ async function copyTeks(text, button) {
 
         try {
 
-            berhasil = document.execCommand("copy");
+            berhasil =
+                document.execCommand("copy");
 
         } catch (error) {
 
-            console.log("Copy gagal:", error);
+            console.log(
+                "Copy gagal:",
+                error
+            );
 
         }
 
         textarea.remove();
-
     }
 
 
+    // Tombol berubah menjadi COPIED
     if (button && berhasil) {
 
-        const teksAwal = button.innerHTML;
+        const teksAwal =
+            button.innerHTML;
 
-        button.innerHTML = "COPIED ✔";
+        button.innerHTML =
+            "COPIED ✔";
+
         button.disabled = true;
 
-        setTimeout(function () {
 
-            button.innerHTML = teksAwal;
+        setTimeout(() => {
+
+            button.innerHTML =
+                teksAwal;
+
             button.disabled = false;
 
         }, 1500);
-
     }
 
 }
@@ -302,14 +332,26 @@ async function copyTeks(text, button) {
 
 function saranGame(id, button) {
 
-    const game = dataGame[id];
+    const game =
+        dataGame[id];
 
     if (!game) {
-        console.error("Game tidak ditemukan:", id);
+
+        console.error(
+            "Game tidak ditemukan:",
+            id
+        );
+
         return;
     }
 
-    copyTeks(ambilAcak(game.saran), button);
+    const teks =
+        ambilAcak(game.saran);
+
+    copyTeks(
+        teks,
+        button
+    );
 
 }
 
@@ -320,14 +362,26 @@ function saranGame(id, button) {
 
 function polaGame(id, button) {
 
-    const game = dataGame[id];
+    const game =
+        dataGame[id];
 
     if (!game) {
-        console.error("Game tidak ditemukan:", id);
+
+        console.error(
+            "Game tidak ditemukan:",
+            id
+        );
+
         return;
     }
 
-    copyTeks(ambilAcak(game.pola), button);
+    const teks =
+        ambilAcak(game.pola);
+
+    copyTeks(
+        teks,
+        button
+    );
 
 }
 
@@ -336,133 +390,230 @@ function polaGame(id, button) {
 // BUAT 36 GAME
 // ========================================
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
-    const container = document.getElementById("gameContainer");
-
-    if (!container) {
-
-        console.error("❌ ID gameContainer tidak ditemukan!");
-        return;
-
-    }
+        const container =
+            document.getElementById(
+                "gameContainer"
+            );
 
 
-    container.innerHTML = "";
+        // Container tidak ditemukan
+        if (!container) {
 
+            console.error(
+                "❌ ID gameContainer tidak ditemukan!"
+            );
 
-    for (let i = 1; i <= 36; i++) {
-
-        const game = dataGame[i];
-
-        if (!game) {
-            console.error("❌ Data game tidak ada:", i);
-            continue;
+            return;
         }
 
 
-        const gameBox = document.createElement("article");
-
-        gameBox.className = "game-box";
-
-
-        // ========================================
-        // PATH GAMBAR
-        // ========================================
-
-        // index.html berada di luar folder img
-        // sehingga gambar berada di:
-        // ./img/game1.jpg
-        // ./img/game2.jpg
-        // dst.
-
-const imagePath = `./game${i}.jpg`;
+        // Bersihkan container
+        container.innerHTML = "";
 
 
-        // ========================================
-        // HTML GAME
-        // ========================================
+        // Buat game 1 - 36
+        for (
+            let i = 1;
+            i <= 36;
+            i++
+        ) {
 
-        gameBox.innerHTML = `
-
-            <div class="image-wrapper">
-
-                <img
-                    class="game-image"
-                    src="${imagePath}"
-                    alt="${game.nama}"
-                >
-
-            </div>
-
-            <div class="game-title">
-                ${game.nama}
-            </div>
-
-            <div class="button-group">
-
-                <button
-                    type="button"
-                    class="btn btn-saran"
-                    onclick="saranGame(${i}, this)"
-                >
-                    🎯 SARAN GAME
-                </button>
-
-                <button
-                    type="button"
-                    class="btn btn-pola"
-                    onclick="polaGame(${i}, this)"
-                >
-                    🔥 POLA GAME
-                </button>
-
-            </div>
-
-        `;
+            const game =
+                dataGame[i];
 
 
-        // ========================================
-        // CEK GAMBAR
-        // ========================================
+            if (!game) {
 
-        const img = gameBox.querySelector(".game-image");
+                console.error(
+                    "❌ Data game tidak ada:",
+                    i
+                );
+
+                continue;
+            }
 
 
-        img.addEventListener("load", function () {
+            // ========================================
+            // BUAT CARD
+            // ========================================
 
-            console.log(
-                `✅ FOTO GAME ${i} BERHASIL:`,
-                this.src
+            const gameBox =
+                document.createElement(
+                    "article"
+                );
+
+            gameBox.className =
+                "game-box";
+
+
+            // ========================================
+            // PATH GAMBAR
+            // ========================================
+            //
+            // FOTO HARUS SATU FOLDER
+            // DENGAN index.html
+            //
+            // game1.jpg
+            // game2.jpg
+            // ...
+            // game36.jpg
+            //
+
+            const imagePath =
+                `./game${i}.jpg`;
+
+
+            // ========================================
+            // HTML CARD
+            // ========================================
+
+            gameBox.innerHTML = `
+
+                <div class="image-wrapper">
+
+                    <img
+                        class="game-image"
+                        src="${imagePath}"
+                        alt="${game.nama}"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="game-title">
+                    ${game.nama}
+                </div>
+
+
+                <div class="button-group">
+
+                    <button
+                        type="button"
+                        class="btn btn-saran"
+                    >
+                        🎯 SARAN GAME
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-pola"
+                    >
+                        🔥 POLA GAME
+                    </button>
+
+                </div>
+
+            `;
+
+
+            // ========================================
+            // BUTTON EVENT
+            // ========================================
+
+            const tombolSaran =
+                gameBox.querySelector(
+                    ".btn-saran"
+                );
+
+            const tombolPola =
+                gameBox.querySelector(
+                    ".btn-pola"
+                );
+
+
+            tombolSaran.addEventListener(
+                "click",
+                function () {
+
+                    saranGame(
+                        i,
+                        this
+                    );
+
+                }
             );
 
-        });
 
+            tombolPola.addEventListener(
+                "click",
+                function () {
 
-        img.addEventListener("error", function () {
+                    polaGame(
+                        i,
+                        this
+                    );
 
-            console.error(
-                `❌ FOTO GAME ${i} GAGAL:`,
-                this.src
+                }
             );
 
-            this.alt = `Foto game ${i} tidak ditemukan`;
 
-        });
+            // ========================================
+            // CEK GAMBAR
+            // ========================================
+
+            const img =
+                gameBox.querySelector(
+                    ".game-image"
+                );
 
 
-        // ========================================
-        // MASUKKAN KE CONTAINER
-        // ========================================
+            img.addEventListener(
+                "load",
+                function () {
 
-        container.appendChild(gameBox);
+                    console.log(
+                        `✅ FOTO GAME ${i} BERHASIL:`,
+                        this.src
+                    );
+
+                }
+            );
+
+
+            img.addEventListener(
+                "error",
+                function () {
+
+                    console.error(
+                        `❌ FOTO GAME ${i} GAGAL:`,
+                        this.src
+                    );
+
+                    this.alt =
+                        `Foto game ${i} tidak ditemukan`;
+
+                }
+            );
+
+
+            // ========================================
+            // MASUKKAN KE CONTAINER
+            // ========================================
+
+            container.appendChild(
+                gameBox
+            );
+
+        }
+
+
+        console.log(
+            "================================"
+        );
+
+        console.log(
+            "✅ 36 GAME BERHASIL DIBUAT"
+        );
+
+        console.log(
+            "================================"
+        );
 
     }
-
-
-    console.log("================================");
-    console.log("✅ 36 GAME BERHASIL DIBUAT");
-    console.log("================================");
-
-});
-console.log("🔥 SCRIPT.JS BERHASIL DIBACA");
+);
