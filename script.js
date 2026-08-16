@@ -221,11 +221,9 @@ function ambilAcak(data) {
         return "";
     }
 
-    const index = Math.floor(
-        Math.random() * data.length
-    );
-
-    return data[index];
+    return data[
+        Math.floor(Math.random() * data.length)
+    ];
 }
 
 
@@ -235,14 +233,10 @@ function ambilAcak(data) {
 
 async function copyTeks(text, button) {
 
-    if (!text) {
-        return;
-    }
+    if (!text) return;
 
     let berhasil = false;
 
-
-    // Clipboard API
     try {
 
         if (
@@ -265,7 +259,6 @@ async function copyTeks(text, button) {
     }
 
 
-    // Fallback copy
     if (!berhasil) {
 
         const textarea =
@@ -301,7 +294,6 @@ async function copyTeks(text, button) {
     }
 
 
-    // Tombol berubah menjadi COPIED
     if (button && berhasil) {
 
         const teksAwal =
@@ -312,8 +304,7 @@ async function copyTeks(text, button) {
 
         button.disabled = true;
 
-
-        setTimeout(() => {
+        setTimeout(function () {
 
             button.innerHTML =
                 teksAwal;
@@ -321,6 +312,166 @@ async function copyTeks(text, button) {
             button.disabled = false;
 
         }, 1500);
+    }
+
+}
+
+
+// ========================================
+// COPY FOTO GAME
+// ========================================
+
+async function copyFotoGame(img, button) {
+
+    if (!img || !img.src) {
+
+        console.error(
+            "❌ Foto game tidak ditemukan!"
+        );
+
+        return;
+    }
+
+
+    if (
+        !navigator.clipboard ||
+        !window.ClipboardItem
+    ) {
+
+        alert(
+            "Browser kamu tidak mendukung copy foto. Gunakan Chrome."
+        );
+
+        return;
+    }
+
+
+    try {
+
+        // Ambil foto
+        const response =
+            await fetch(
+                img.src,
+                {
+                    mode: "cors"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Foto gagal dimuat."
+            );
+
+        }
+
+
+        const blob =
+            await response.blob();
+
+
+        // Pastikan menjadi PNG
+        const imageBitmap =
+            await createImageBitmap(blob);
+
+
+        const canvas =
+            document.createElement("canvas");
+
+
+        canvas.width =
+            imageBitmap.width;
+
+        canvas.height =
+            imageBitmap.height;
+
+
+        const ctx =
+            canvas.getContext("2d");
+
+
+        ctx.drawImage(
+            imageBitmap,
+            0,
+            0
+        );
+
+
+        const pngBlob =
+            await new Promise(
+                function (resolve) {
+
+                    canvas.toBlob(
+                        resolve,
+                        "image/png"
+                    );
+
+                }
+            );
+
+
+        if (!pngBlob) {
+
+            throw new Error(
+                "Gagal membuat PNG."
+            );
+
+        }
+
+
+        // ========================================
+        // COPY IMAGE KE CLIPBOARD
+        // ========================================
+
+        await navigator.clipboard.write([
+            new ClipboardItem({
+                "image/png": pngBlob
+            })
+        ]);
+
+
+        // ========================================
+        // TOMBOL BERHASIL
+        // ========================================
+
+        const teksAwal =
+            button.innerHTML;
+
+        button.innerHTML =
+            "COPIED FOTO ✔";
+
+        button.disabled = true;
+
+
+        setTimeout(function () {
+
+            button.innerHTML =
+                teksAwal;
+
+            button.disabled = false;
+
+        }, 1500);
+
+
+        console.log(
+            "✅ FOTO BERHASIL DICOPY:",
+            img.src
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "❌ COPY FOTO GAGAL:",
+            error
+        );
+
+
+        alert(
+            "Foto tidak bisa dicopy. Pastikan website dibuka melalui HTTPS GitHub Pages."
+        );
+
     }
 
 }
@@ -345,8 +496,10 @@ function saranGame(id, button) {
         return;
     }
 
+
     const teks =
         ambilAcak(game.saran);
+
 
     copyTeks(
         teks,
@@ -358,6 +511,7 @@ function saranGame(id, button) {
 
 // ========================================
 // POLA GAME
+// KLIK = COPY FOTO
 // ========================================
 
 function polaGame(id, button) {
@@ -375,11 +529,39 @@ function polaGame(id, button) {
         return;
     }
 
-    const teks =
-        ambilAcak(game.pola);
 
-    copyTeks(
-        teks,
+    const gameBox =
+        button.closest(".game-box");
+
+
+    if (!gameBox) {
+
+        console.error(
+            "Game box tidak ditemukan!"
+        );
+
+        return;
+    }
+
+
+    const img =
+        gameBox.querySelector(
+            ".game-image"
+        );
+
+
+    if (!img) {
+
+        console.error(
+            "Foto game tidak ditemukan!"
+        );
+
+        return;
+    }
+
+
+    copyFotoGame(
+        img,
         button
     );
 
@@ -400,7 +582,6 @@ document.addEventListener(
             );
 
 
-        // Container tidak ditemukan
         if (!container) {
 
             console.error(
@@ -411,11 +592,9 @@ document.addEventListener(
         }
 
 
-        // Bersihkan container
         container.innerHTML = "";
 
 
-        // Buat game 1 - 36
         for (
             let i = 1;
             i <= 36;
@@ -437,38 +616,26 @@ document.addEventListener(
             }
 
 
-            // ========================================
-            // BUAT CARD
-            // ========================================
-
             const gameBox =
                 document.createElement(
                     "article"
                 );
+
 
             gameBox.className =
                 "game-box";
 
 
             // ========================================
-            // PATH GAMBAR
+            // PATH FOTO
             // ========================================
-            //
-            // FOTO HARUS SATU FOLDER
-            // DENGAN index.html
-            //
-            // game1.jpg
-            // game2.jpg
-            // ...
-            // game36.jpg
-            //
 
             const imagePath =
                 `./game${i}.jpg`;
 
 
             // ========================================
-            // HTML CARD
+            // CARD
             // ========================================
 
             gameBox.innerHTML = `
@@ -513,13 +680,14 @@ document.addEventListener(
 
 
             // ========================================
-            // BUTTON EVENT
+            // BUTTON
             // ========================================
 
             const tombolSaran =
                 gameBox.querySelector(
                     ".btn-saran"
                 );
+
 
             const tombolPola =
                 gameBox.querySelector(
@@ -554,7 +722,7 @@ document.addEventListener(
 
 
             // ========================================
-            // CEK GAMBAR
+            // CEK FOTO
             // ========================================
 
             const img =
@@ -593,7 +761,7 @@ document.addEventListener(
 
 
             // ========================================
-            // MASUKKAN KE CONTAINER
+            // MASUKKAN CARD
             // ========================================
 
             container.appendChild(
