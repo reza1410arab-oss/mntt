@@ -6,335 +6,195 @@ const dataGame = {
 
     1: {
         nama: "MAHJONG WAYS 1",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong WAYS
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong WAYS
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 15x SPIN MANUAL TURBO OFF`
     },
 
     2: {
         nama: "GAME 2",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Gates Of Gatot Kaca Super Scatter
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Gates Of Gatot Kaca Super Scatter
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
 ❎✅✅ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
-❎✅❎ 25x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 25x Quick DC ON`
     },
 
     3: {
         nama: "GAME 3",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bandito
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bandito
 
 🔥 15x SPIN OTOMATIS TURBO ON
 🔥 25x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
-🔥 5x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 5x SPIN MANUAL TURBO OFF`
     },
 
     4: {
         nama: "GAME 4",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Sweet Bonanza SUPER SCATTER
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Sweet Bonanza SUPER SCATTER
 
 ✅❎❎ 22x Manual DC OFF
 ❎✅❎ 9x Quick DC ON
 ❎✅✅ 15x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
-❎✅❎ 23x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 23x Quick DC ON`
     },
 
     5: {
         nama: "GAME 5",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bounty SHOWDOWN
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bounty SHOWDOWN
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
-🔥 15x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 15x SPIN MANUAL TURBO OFF`
     },
 
     6: {
         nama: "GAME 6",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - GATES OF OLYMPUS
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - GATES OF OLYMPUS
 
 ✅❎❎ 11x Manual DC OFF
 ❎✅❎ 21x Quick DC ON
 ❎✅✅ 17x Manual DC OFF
 ✅❎✅ 7x Quick DC ON
-❎✅❎ 15x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 15x Quick DC ON`
     },
 
     7: {
         nama: "GAME 7",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong Ways 2
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong Ways 2
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 5x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
-🔥 17x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 17x SPIN MANUAL TURBO OFF`
     },
 
     8: {
         nama: "GAME 8",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Starlight Princess SUPER SCATTER
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Starlight Princess SUPER SCATTER
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
 ❎✅✅ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
-❎✅❎ 25x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 25x Quick DC ON`
     },
 
     9: {
         nama: "GAME 9",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Caishen WINS
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Caishen WINS
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 17x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
-🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 7x SPIN MANUAL TURBO OFF`
     },
 
     10: {
         nama: "GAME 10",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Dragon POTS
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Dragon POTS
 
 ✅❎❎ 17x Manual DC OFF
 ❎✅❎ 12x Manual DC OFF
-❎✅❎ 8x Quick DC ON
+❎❎❎ 8x Quick DC ON
 ✅❎✅ 10x Quick DC ON
-❎✅❎ 30x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 30x Quick DC ON`
     },
 
     11: {
         nama: "GAME 11",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mafia Mayhem
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mafia Mayhem
 
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 12x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
-🔥 8x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 8x SPIN MANUAL TURBO OFF`
     },
 
     12: {
         nama: "GAME 12",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Great Ghosts
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Great Ghosts
 
 ✅❎❎ 15x Manual DC OFF
 ❎✅❎ 10x Quick DC ON
 ❎✅✅ 8x Manual DC OFF
 ✅❎✅ 20x Quick DC ON
-❎✅❎ 15x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 15x Quick DC ON`
     },
 
     13: {
         nama: "GAME 13",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Dragon Hatch
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Dragon Hatch
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 5x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
-🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 7x SPIN MANUAL TURBO OFF`
     },
 
     14: {
         nama: "GAME 14",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Aztec Gems
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Aztec Gems
 
 ✅❎❎ 16x Manual DC OFF
 ❎✅❎ 9x Quick DC ON
 ❎✅✅ 15x Manual DC OFF
 ✅❎✅ 8x Quick DC ON
-❎✅❎ 30x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 30x Quick DC ON`
     },
 
     15: {
         nama: "GAME 15",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Pinata WINS
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Pinata WINS
 
 🔥 30x SPIN MANUAL TURBO OFF
 🔥 15x SPIN OTOMATIS TURBO ON
-🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
+🔥 7x SPIN MANUAL TURBO OFF`
     },
 
     16: {
         nama: "GAME 16",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Wisdom OF ANTHENA 1000
+        saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Wisdom OF ANTHENA 1000
 
 ✅❎❎ 10x Manual DC OFF
 ❎✅❎ 9x Quick DC ON
 ❎✅✅ 18x Manual DC OFF
 ✅❎✅ 15x Quick DC ON
-❎✅❎ 20x Quick DC ON`],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    17: {
-        nama: "GAME 17",
-        saran: ["GAME 17 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    18: {
-        nama: "GAME 18",
-        saran: ["GAME 18 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    19: {
-        nama: "GAME 19",
-        saran: ["GAME 19 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    20: {
-        nama: "GAME 20",
-        saran: ["GAME 20 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    21: {
-        nama: "GAME 21",
-        saran: ["GAME 21 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    22: {
-        nama: "GAME 22",
-        saran: ["GAME 22 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    23: {
-        nama: "GAME 23",
-        saran: ["GAME 23 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    24: {
-        nama: "GAME 24",
-        saran: ["GAME 24 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    25: {
-        nama: "GAME 25",
-        saran: ["GAME 25 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    26: {
-        nama: "GAME 26",
-        saran: ["GAME 26 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    27: {
-        nama: "GAME 27",
-        saran: ["GAME 27 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    28: {
-        nama: "GAME 28",
-        saran: ["GAME 28 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    29: {
-        nama: "GAME 29",
-        saran: ["GAME 29 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    30: {
-        nama: "GAME 30",
-        saran: ["GAME 30 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    31: {
-        nama: "GAME 31",
-        saran: ["GAME 31 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    32: {
-        nama: "GAME 32",
-        saran: ["GAME 32 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    33: {
-        nama: "GAME 33",
-        saran: ["GAME 33 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    34: {
-        nama: "GAME 34",
-        saran: ["GAME 34 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    35: {
-        nama: "GAME 35",
-        saran: ["GAME 35 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
-    },
-
-    36: {
-        nama: "GAME 36",
-        saran: ["GAME 36 - SARAN SEMENTARA"],
-        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
+❎✅❎ 20x Quick DC ON`
     }
 
 };
 
 
 // ========================================
-// ACAK DATA
+// GAME 17 - 36
 // ========================================
 
-function ambilAcak(data) {
+for (let i = 17; i <= 36; i++) {
 
-    if (!Array.isArray(data) || data.length === 0) {
-        return "";
-    }
+    dataGame[i] = {
+        nama: `GAME ${i}`,
+        saran: `Dicoba bermain di game ${i}.`
+    };
 
-    return data[
-        Math.floor(Math.random() * data.length)
-    ];
 }
 
 
 // ========================================
-// COPY TEKS
+// COPY TEXT
 // ========================================
 
 async function copyTeks(text, button) {
 
-    if (!text) {
-        return;
-    }
+    if (!text) return;
 
     let berhasil = false;
 
@@ -348,20 +208,15 @@ async function copyTeks(text, button) {
             await navigator.clipboard.writeText(text);
 
             berhasil = true;
-
         }
 
     } catch (error) {
 
-        console.error(
-            "Clipboard API gagal:",
-            error
-        );
+        console.log("Clipboard API gagal:", error);
 
     }
 
 
-    // FALLBACK COPY TEKS
     if (!berhasil) {
 
         const textarea =
@@ -372,7 +227,6 @@ async function copyTeks(text, button) {
         textarea.style.position = "fixed";
         textarea.style.left = "-9999px";
         textarea.style.top = "0";
-        textarea.style.opacity = "0";
 
         document.body.appendChild(textarea);
 
@@ -386,10 +240,7 @@ async function copyTeks(text, button) {
 
         } catch (error) {
 
-            console.error(
-                "Fallback copy gagal:",
-                error
-            );
+            console.log("Copy gagal:", error);
 
         }
 
@@ -398,79 +249,26 @@ async function copyTeks(text, button) {
     }
 
 
-    if (berhasil && button) {
+    if (button && berhasil) {
 
-        tombolBerhasil(
-            button,
-            "COPIED ✔",
-            1500
-        );
-
-    } else {
-
-        tombolGagal(
-            button,
-            "GAGAL COPY ❌",
-            2000
-        );
-
-    }
-
-}
-
-
-// ========================================
-// TOMBOL BERHASIL
-// ========================================
-
-function tombolBerhasil(button, text, waktu) {
-
-    if (!button) {
-        return;
-    }
-
-    const teksAwal =
-        button.innerHTML;
-
-    button.innerHTML = text;
-    button.disabled = true;
-
-    setTimeout(() => {
+        const teksAwal =
+            button.innerHTML;
 
         button.innerHTML =
-            teksAwal;
+            "COPIED ✔";
 
-        button.disabled = false;
+        button.disabled = true;
 
-    }, waktu);
+        setTimeout(() => {
 
-}
+            button.innerHTML =
+                teksAwal;
 
+            button.disabled = false;
 
-// ========================================
-// TOMBOL GAGAL
-// ========================================
+        }, 1500);
 
-function tombolGagal(button, text, waktu) {
-
-    if (!button) {
-        return;
     }
-
-    const teksAwal =
-        button.innerHTML;
-
-    button.innerHTML = text;
-    button.disabled = true;
-
-    setTimeout(() => {
-
-        button.innerHTML =
-            teksAwal;
-
-        button.disabled = false;
-
-    }, waktu);
 
 }
 
@@ -483,15 +281,7 @@ async function copyFotoGame(img, button) {
 
     if (!img) {
 
-        console.error(
-            "❌ Elemen foto tidak ditemukan!"
-        );
-
-        tombolGagal(
-            button,
-            "FOTO TIDAK ADA ❌",
-            2000
-        );
+        console.error("❌ Foto tidak ditemukan!");
 
         return;
     }
@@ -499,90 +289,34 @@ async function copyFotoGame(img, button) {
 
     try {
 
-        // ========================================
-        // TUNGGU FOTO SELESAI DIMUAT
-        // ========================================
-
+        // Tunggu gambar sampai selesai
         if (
             !img.complete ||
             img.naturalWidth === 0
         ) {
 
-            await new Promise(
-                (resolve, reject) => {
+            await new Promise((resolve, reject) => {
 
-                    const selesai =
-                        () => {
-                            cleanup();
-                            resolve();
-                        };
+                img.addEventListener(
+                    "load",
+                    resolve,
+                    { once: true }
+                );
 
-                    const gagal =
-                        () => {
-                            cleanup();
-                            reject(
-                                new Error(
-                                    "Foto gagal dimuat."
-                                )
-                            );
-                        };
+                img.addEventListener(
+                    "error",
+                    reject,
+                    { once: true }
+                );
 
-                    const cleanup =
-                        () => {
-
-                            img.removeEventListener(
-                                "load",
-                                selesai
-                            );
-
-                            img.removeEventListener(
-                                "error",
-                                gagal
-                            );
-
-                        };
-
-
-                    img.addEventListener(
-                        "load",
-                        selesai,
-                        { once: true }
-                    );
-
-                    img.addEventListener(
-                        "error",
-                        gagal,
-                        { once: true }
-                    );
-
-                }
-            );
+            });
 
         }
 
-
-        // ========================================
-        // CEK FOTO
-        // ========================================
-
-        if (
-            img.naturalWidth === 0 ||
-            img.naturalHeight === 0
-        ) {
-
-            throw new Error(
-                "Ukuran foto tidak valid."
-            );
-
-        }
-
-
-        // ========================================
-        // BUAT CANVAS
-        // ========================================
 
         const canvas =
             document.createElement("canvas");
+
 
         canvas.width =
             img.naturalWidth;
@@ -595,57 +329,32 @@ async function copyFotoGame(img, button) {
             canvas.getContext("2d");
 
 
-        if (!ctx) {
-
-            throw new Error(
-                "Canvas tidak tersedia."
-            );
-
-        }
-
-
-        // ========================================
-        // GAMBAR KE CANVAS
-        // ========================================
-
         ctx.drawImage(
             img,
             0,
-            0,
-            img.naturalWidth,
-            img.naturalHeight
+            0
         );
 
 
-        // ========================================
-        // UBAH CANVAS MENJADI PNG
-        // ========================================
-
         const blob =
-            await new Promise(
-                (resolve) => {
+            await new Promise(resolve => {
 
-                    canvas.toBlob(
-                        resolve,
-                        "image/png"
-                    );
+                canvas.toBlob(
+                    resolve,
+                    "image/png"
+                );
 
-                }
-            );
+            });
 
 
         if (!blob) {
 
             throw new Error(
-                "Gagal membuat PNG."
+                "Gagal membuat gambar."
             );
 
         }
 
-
-        // ========================================
-        // CEK SUPPORT CLIPBOARD GAMBAR
-        // ========================================
 
         if (
             !navigator.clipboard ||
@@ -653,15 +362,11 @@ async function copyFotoGame(img, button) {
         ) {
 
             throw new Error(
-                "Browser tidak mendukung copy gambar."
+                "Browser tidak mendukung copy foto."
             );
 
         }
 
-
-        // ========================================
-        // COPY FOTO KE CLIPBOARD
-        // ========================================
 
         await navigator.clipboard.write([
             new ClipboardItem({
@@ -670,24 +375,34 @@ async function copyFotoGame(img, button) {
         ]);
 
 
-        // ========================================
-        // BERHASIL
-        // ========================================
+        const teksAwal =
+            button.innerHTML;
+
+
+        button.innerHTML =
+            "FOTO COPIED ✔";
+
+        button.disabled = true;
+
+
+        setTimeout(() => {
+
+            button.innerHTML =
+                teksAwal;
+
+            button.disabled = false;
+
+        }, 1500);
+
 
         console.log(
             "✅ FOTO BERHASIL DICOPY:",
             img.src
         );
 
+    }
 
-        tombolBerhasil(
-            button,
-            "FOTO COPIED ✔",
-            1500
-        );
-
-
-    } catch (error) {
+    catch (error) {
 
         console.error(
             "❌ COPY FOTO GAGAL:",
@@ -695,11 +410,24 @@ async function copyFotoGame(img, button) {
         );
 
 
-        tombolGagal(
-            button,
-            "GAGAL COPY FOTO ❌",
-            2500
-        );
+        const teksAwal =
+            button.innerHTML;
+
+
+        button.innerHTML =
+            "GAGAL COPY ❌";
+
+        button.disabled = true;
+
+
+        setTimeout(() => {
+
+            button.innerHTML =
+                teksAwal;
+
+            button.disabled = false;
+
+        }, 2000);
 
     }
 
@@ -719,7 +447,7 @@ function saranGame(id, button) {
     if (!game) {
 
         console.error(
-            "❌ Game tidak ditemukan:",
+            "Game tidak ditemukan:",
             id
         );
 
@@ -727,14 +455,8 @@ function saranGame(id, button) {
     }
 
 
-    const teks =
-        ambilAcak(
-            game.saran
-        );
-
-
     copyTeks(
-        teks,
+        game.saran,
         button
     );
 
@@ -743,44 +465,25 @@ function saranGame(id, button) {
 
 // ========================================
 // POLA GAME
-// KLIK POLA = COPY FOTO
+// KLIK = COPY FOTO
 // ========================================
 
 function polaGame(id, button) {
 
-    const game =
-        dataGame[id];
-
-
-    if (!game) {
-
-        console.error(
-            "❌ Game tidak ditemukan:",
-            id
-        );
-
-        return;
-    }
-
-
-    // Ambil CARD tempat tombol berada
     const gameBox =
-        button.closest(
-            ".game-box"
-        );
+        button.closest(".game-box");
 
 
     if (!gameBox) {
 
         console.error(
-            "❌ .game-box tidak ditemukan!"
+            "❌ Game box tidak ditemukan!"
         );
 
         return;
     }
 
 
-    // Ambil foto dari card yang sama
     const img =
         gameBox.querySelector(
             ".game-image"
@@ -790,18 +493,12 @@ function polaGame(id, button) {
     if (!img) {
 
         console.error(
-            "❌ .game-image tidak ditemukan!"
+            "❌ Foto game tidak ditemukan!"
         );
 
         return;
     }
 
-
-    // ========================================
-    // PENTING:
-    // TIDAK COPY game.pola
-    // LANGSUNG COPY FOTO
-    // ========================================
 
     copyFotoGame(
         img,
@@ -828,14 +525,13 @@ document.addEventListener(
         if (!container) {
 
             console.error(
-                "❌ ID gameContainer tidak ditemukan!"
+                "❌ gameContainer tidak ditemukan!"
             );
 
             return;
         }
 
 
-        // Bersihkan container
         container.innerHTML = "";
 
 
@@ -853,20 +549,17 @@ document.addEventListener(
                 dataGame[i];
 
 
+            // Jangan pernah menghentikan loop
             if (!game) {
 
-                console.error(
-                    "❌ DATA GAME TIDAK ADA:",
-                    i
+                console.warn(
+                    `⚠️ Data GAME ${i} kosong`
                 );
 
                 continue;
+
             }
 
-
-            // ========================================
-            // BUAT CARD
-            // ========================================
 
             const gameBox =
                 document.createElement(
@@ -887,7 +580,7 @@ document.addEventListener(
 
 
             // ========================================
-            // HTML CARD
+            // CARD
             // ========================================
 
             gameBox.innerHTML = `
@@ -898,13 +591,16 @@ document.addEventListener(
                         class="game-image"
                         src="${imagePath}"
                         alt="${game.nama}"
+                        loading="eager"
                     >
 
                 </div>
 
+
                 <div class="game-title">
                     ${game.nama}
                 </div>
+
 
                 <div class="button-group">
 
@@ -914,6 +610,7 @@ document.addEventListener(
                     >
                         🎯 SARAN GAME
                     </button>
+
 
                     <button
                         type="button"
@@ -928,7 +625,7 @@ document.addEventListener(
 
 
             // ========================================
-            // AMBIL BUTTON
+            // BUTTON
             // ========================================
 
             const tombolSaran =
@@ -943,10 +640,7 @@ document.addEventListener(
                 );
 
 
-            // ========================================
-            // BUTTON SARAN
-            // ========================================
-
+            // SARAN
             tombolSaran.addEventListener(
                 "click",
                 function () {
@@ -960,11 +654,7 @@ document.addEventListener(
             );
 
 
-            // ========================================
-            // BUTTON POLA
-            // COPY FOTO
-            // ========================================
-
+            // POLA = COPY FOTO
             tombolPola.addEventListener(
                 "click",
                 function () {
@@ -993,7 +683,7 @@ document.addEventListener(
                 function () {
 
                     console.log(
-                        `✅ FOTO GAME ${i} BERHASIL:`,
+                        `✅ GAME ${i} FOTO OK:`,
                         this.src
                     );
 
@@ -1006,8 +696,8 @@ document.addEventListener(
                 function () {
 
                     console.error(
-                        `❌ FOTO GAME ${i} GAGAL:`,
-                        this.src
+                        `❌ GAME ${i} FOTO TIDAK DITEMUKAN:`,
+                        imagePath
                     );
 
                     this.alt =
@@ -1018,7 +708,7 @@ document.addEventListener(
 
 
             // ========================================
-            // MASUKKAN CARD
+            // MASUKKAN KE WEBSITE
             // ========================================
 
             container.appendChild(
@@ -1028,16 +718,12 @@ document.addEventListener(
         }
 
 
-        // ========================================
-        // SELESAI
-        // ========================================
-
         console.log(
             "================================"
         );
 
         console.log(
-            "✅ 36 GAME BERHASIL DIBUAT"
+            "✅ SEMUA GAME 1 - 36 DIBUAT"
         );
 
         console.log(
