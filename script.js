@@ -376,8 +376,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // ./img/game2.jpg
         // dst.
 
-        const imagePath =
-            new URL(`./img/game${i}.jpg`, document.baseURI).href;
+       const imagePath = `./img/game${i}.jpg`;
 
 
         // ========================================
