@@ -531,30 +531,5 @@ const dataGameLanjutan = {
 // ========================================
 
 Object.assign(dataGame, dataGameLanjutan);
-document.addEventListener("DOMContentLoaded", () => {
-    const gameContainer = document.getElementById("gameContainer");
 
-    if (!gameContainer) {
-        console.error("gameContainer tidak ditemukan!");
-        return;
-    }
-
-    gameContainer.innerHTML = "";
-
-    Object.values(dataGame).forEach((game) => {
-        const card = document.createElement("div");
-
-        card.className = "game-card";
-
-        card.innerHTML = `
-            <h2>${game.nama}</h2>
-            <p>${game.saran[0].replace(/\n/g, "<br>")}</p>
-            <p>${game.pola[0]}</p>
-        `;
-
-        gameContainer.appendChild(card);
-    });
-
-    console.log("GAME BERHASIL DIMUAT:", Object.keys(dataGame).length);
-});
 
