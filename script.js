@@ -181,9 +181,12 @@ const dataGame = {
 for (let i = 17; i <= 36; i++) {
 
     dataGame[i] = {
-        nama: `GAME ${i}`,
-        saran: `Dicoba bermain di game ${i}.`
-    };
+        nama: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Yakuza Honor
+
+🔥 30x SPIN MANUAL TURBO OFF
+🔥 15x SPIN OTOMATIS TURBO ON
+🔥 7x SPIN MANUAL TURBO OFF`
+    },
 
 }
 
