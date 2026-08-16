@@ -376,7 +376,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // ./img/game2.jpg
         // dst.
 
-       const imagePath = `./img/game${i}.jpg`;
+const imagePath = `./game${i}.jpg`;
 
 
         // ========================================
