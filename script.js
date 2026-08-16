@@ -136,7 +136,7 @@ const dataGame = {
 
 ✅❎❎ 15x Manual DC OFF
 ❎✅❎ 10x Quick DC ON
-❎✅✅ 8x Manual DC OFF
+❎✅❎ 8x Manual DC OFF
 ✅❎✅ 20x Quick DC ON
 ❎✅❎ 15x Quick DC ON`],
         pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
@@ -159,7 +159,7 @@ const dataGame = {
 
 ✅❎❎ 16x Manual DC OFF
 ❎✅❎ 9x Quick DC ON
-❎✅✅ 15x Manual DC OFF
+❎✅❎ 15x Manual DC OFF
 ✅❎✅ 8x Quick DC ON
 ❎✅❎ 30x Quick DC ON`],
         pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
@@ -181,13 +181,15 @@ const dataGame = {
 
 ✅❎❎ 10x Manual DC OFF
 ❎✅❎ 9x Quick DC ON
-❎✅✅ 18x Manual DC OFF
+❎❎❎ 18x Manual DC OFF
 ✅❎✅ 15x Quick DC ON
 ❎✅❎ 20x Quick DC ON`],
         pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     }
 
 };
+
+
 // ========================================
 // GAME 17 - 36
 // ========================================
@@ -196,330 +198,232 @@ const dataGameLanjutan = {
 
     17: {
         nama: "NAMA GAME 17",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 17
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     18: {
         nama: "NAMA GAME 18",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 18
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎✅❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     19: {
         nama: "NAMA GAME 19",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 19
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     20: {
         nama: "NAMA GAME 20",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 20
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎✅❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     21: {
         nama: "NAMA GAME 21",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 21
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     22: {
         nama: "NAMA GAME 22",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 22
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎✅❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     23: {
         nama: "NAMA GAME 23",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 23
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     24: {
         nama: "NAMA GAME 24",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 24
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     25: {
         nama: "NAMA GAME 25",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 25
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     26: {
         nama: "NAMA GAME 26",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 26
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     27: {
         nama: "NAMA GAME 27",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 27
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     28: {
         nama: "NAMA GAME 28",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 28
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     29: {
         nama: "NAMA GAME 29",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 29
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     30: {
         nama: "NAMA GAME 30",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 30
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     31: {
         nama: "NAMA GAME 31",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 31
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     32: {
         nama: "NAMA GAME 32",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 32
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     33: {
         nama: "NAMA GAME 33",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 33
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     34: {
         nama: "NAMA GAME 34",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 34
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     35: {
         nama: "NAMA GAME 35",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 35
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
-
 
     36: {
         nama: "NAMA GAME 36",
-
         saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 36
 
 ✅❎❎ 18x Manual DC OFF
 ❎✅❎ 8x Quick DC ON
-❎✅✅ 13x Manual DC OFF
+❎❎❎ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     }
 
 };
@@ -527,9 +431,51 @@ const dataGameLanjutan = {
 
 // ========================================
 // GABUNGKAN GAME 17 - 36
-// KE dataGame UTAMA
 // ========================================
 
 Object.assign(dataGame, dataGameLanjutan);
 
 
+// ========================================
+// TAMPILKAN GAME KE HALAMAN
+// ========================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const gameContainer = document.getElementById("gameContainer");
+
+    if (!gameContainer) {
+        console.error("gameContainer tidak ditemukan!");
+        return;
+    }
+
+    gameContainer.innerHTML = "";
+
+    Object.values(dataGame).forEach(function (game) {
+
+        const card = document.createElement("div");
+
+        card.className = "game-card";
+
+        card.innerHTML = `
+            <h2>${game.nama}</h2>
+
+            <div class="saran">
+                ${game.saran[0].replace(/\n/g, "<br>")}
+            </div>
+
+            <div class="pola">
+                ${game.pola[0]}
+            </div>
+        `;
+
+        gameContainer.appendChild(card);
+
+    });
+
+    console.log(
+        "GAME BERHASIL DIMUAT:",
+        Object.keys(dataGame).length
+    );
+
+});
