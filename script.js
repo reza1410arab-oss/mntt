@@ -266,34 +266,24 @@ async function copyTeks(text, button) {
 
 
 // ========================================
-// COPY FOTO
+// COPY FOTO GAME
 // ========================================
 
 async function copyFotoGame(img, button) {
 
-    if (!img) {
-        console.error("❌ Foto tidak ditemukan!");
-        return;
-    }
-
     try {
 
-        // Pastikan foto sudah selesai dimuat
+        if (!img) {
+            throw new Error("Foto tidak ditemukan");
+        }
+
+        // Pastikan gambar sudah selesai dimuat
         if (!img.complete || img.naturalWidth === 0) {
 
             await new Promise((resolve, reject) => {
 
-                img.addEventListener(
-                    "load",
-                    resolve,
-                    { once: true }
-                );
-
-                img.addEventListener(
-                    "error",
-                    reject,
-                    { once: true }
-                );
+                img.onload = resolve;
+                img.onerror = reject;
 
             });
 
@@ -307,52 +297,55 @@ async function copyFotoGame(img, button) {
         const canvas =
             document.createElement("canvas");
 
-        const width =
+        canvas.width =
             img.naturalWidth;
 
-        const height =
+        canvas.height =
             img.naturalHeight;
-
-        canvas.width = width;
-        canvas.height = height;
 
 
         const ctx =
             canvas.getContext("2d");
 
+
         ctx.drawImage(
             img,
             0,
             0,
-            width,
-            height
+            canvas.width,
+            canvas.height
         );
 
 
         // ========================================
-        // UBAH KE PNG
+        // BUAT FILE PNG
         // ========================================
 
         const blob =
-            await new Promise((resolve) => {
+            await new Promise((resolve, reject) => {
 
                 canvas.toBlob(
-                    resolve,
+                    result => {
+
+                        if (result) {
+                            resolve(result);
+                        } else {
+                            reject(
+                                new Error(
+                                    "Gagal membuat PNG"
+                                )
+                            );
+                        }
+
+                    },
                     "image/png"
                 );
 
             });
 
 
-        if (!blob) {
-            throw new Error(
-                "Gagal membuat file gambar."
-            );
-        }
-
-
         // ========================================
-        // CEK CLIPBOARD
+        // COPY KE CLIPBOARD
         // ========================================
 
         if (
@@ -361,15 +354,11 @@ async function copyFotoGame(img, button) {
         ) {
 
             throw new Error(
-                "Browser tidak mendukung copy gambar."
+                "Browser tidak mendukung copy gambar"
             );
 
         }
 
-
-        // ========================================
-        // COPY FOTO KE CLIPBOARD
-        // ========================================
 
         await navigator.clipboard.write([
             new ClipboardItem({
@@ -379,7 +368,7 @@ async function copyFotoGame(img, button) {
 
 
         // ========================================
-        // TOMBOL BERHASIL
+        // BERHASIL
         // ========================================
 
         const teksAwal =
@@ -420,15 +409,11 @@ async function copyFotoGame(img, button) {
         button.innerHTML =
             "GAGAL COPY ❌";
 
-        button.disabled = true;
-
 
         setTimeout(() => {
 
             button.innerHTML =
                 teksAwal;
-
-            button.disabled = false;
 
         }, 2000);
 
@@ -454,8 +439,11 @@ function saranGame(id, button) {
         return;
     }
 
+
+    // SARAN = COPY TEKS
     const teks =
         ambilAcak(game.saran);
+
 
     copyTeks(
         teks,
@@ -467,31 +455,24 @@ function saranGame(id, button) {
 
 // ========================================
 // POLA GAME
-// KLIK = COPY FOTO
+// ========================================
+// PENTING:
+// POLA GAME TIDAK COPY TEKS POLA.
+// POLA GAME LANGSUNG COPY FOTO.
 // ========================================
 
 function polaGame(id, button) {
-
-    const game =
-        dataGame[id];
-
-    if (!game) {
-        console.error(
-            "Game tidak ditemukan:",
-            id
-        );
-        return;
-    }
-
 
     const gameBox =
         button.closest(".game-box");
 
 
     if (!gameBox) {
+
         console.error(
-            "Game box tidak ditemukan!"
+            "❌ Game box tidak ditemukan!"
         );
+
         return;
     }
 
@@ -503,14 +484,16 @@ function polaGame(id, button) {
 
 
     if (!img) {
+
         console.error(
-            "Foto game tidak ditemukan!"
+            "❌ Foto game tidak ditemukan!"
         );
+
         return;
     }
 
 
-    // COPY FOTO
+    // LANGSUNG COPY FOTO
     copyFotoGame(
         img,
         button
@@ -547,7 +530,7 @@ document.addEventListener(
 
 
         // ========================================
-        // BUAT GAME 1 - 36
+        // GAME 1 - 36
         // ========================================
 
         for (
@@ -571,6 +554,10 @@ document.addEventListener(
             }
 
 
+            // ========================================
+            // CARD
+            // ========================================
+
             const gameBox =
                 document.createElement(
                     "article"
@@ -582,16 +569,12 @@ document.addEventListener(
 
 
             // ========================================
-            // PATH FOTO
+            // FOTO
             // ========================================
 
             const imagePath =
                 `./game${i}.jpg`;
 
-
-            // ========================================
-            // HTML CARD
-            // ========================================
 
             gameBox.innerHTML = `
 
@@ -606,9 +589,11 @@ document.addEventListener(
 
                 </div>
 
+
                 <div class="game-title">
                     ${game.nama}
                 </div>
+
 
                 <div class="button-group">
 
@@ -618,6 +603,7 @@ document.addEventListener(
                     >
                         🎯 SARAN GAME
                     </button>
+
 
                     <button
                         type="button"
@@ -632,13 +618,14 @@ document.addEventListener(
 
 
             // ========================================
-            // AMBIL BUTTON
+            // BUTTON
             // ========================================
 
             const tombolSaran =
                 gameBox.querySelector(
                     ".btn-saran"
                 );
+
 
             const tombolPola =
                 gameBox.querySelector(
@@ -647,7 +634,7 @@ document.addEventListener(
 
 
             // ========================================
-            // EVENT SARAN
+            // SARAN
             // ========================================
 
             tombolSaran.addEventListener(
@@ -664,7 +651,7 @@ document.addEventListener(
 
 
             // ========================================
-            // EVENT POLA
+            // POLA
             // KLIK = COPY FOTO
             // ========================================
 
@@ -721,7 +708,7 @@ document.addEventListener(
 
 
             // ========================================
-            // MASUKKAN CARD
+            // MASUKKAN KE HALAMAN
             // ========================================
 
             container.appendChild(
@@ -737,6 +724,10 @@ document.addEventListener(
 
         console.log(
             "✅ 36 GAME BERHASIL DIBUAT"
+        );
+
+        console.log(
+            "🔥 POLA GAME = COPY FOTO"
         );
 
         console.log(
