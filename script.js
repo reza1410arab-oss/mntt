@@ -1,8 +1,7 @@
-```javascript
 "use strict";
 
 // ========================================
-// DATA GAME 1 - 16
+// DATA GAME
 // ========================================
 
 const dataGame = {
@@ -13,102 +12,162 @@ const dataGame = {
 
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF
-🔥 20x SPIN OTOMATIS TURBO ON`],
-        pola: "10 AUTO - 8 MANUAL - 20 AUTO"
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     },
 
     2: {
-        nama: "MAHJONG WAYS 2",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 5 MANUAL - 15 AUTO"
+        nama: "GAME 2",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Gates Of Gatot Kaca Super Scatter
+
+✅❎❎ 18x Manual DC OFF
+❎✅❎ 8x Quick DC ON
+❎✅✅ 13x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 25x Quick DC ON`],
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     },
 
     3: {
-        nama: "MAHJONG WAYS 3",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "15 AUTO - 5 MANUAL - 20 AUTO"
+        nama: "GAME 3",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bandito
+
+🔥 15x SPIN OTOMATIS TURBO ON
+🔥 25x SPIN MANUAL TURBO OFF
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 5x SPIN MANUAL TURBO OFF`],
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     },
 
     4: {
-        nama: "MAHJONG WAYS 4",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 10 MANUAL - 20 AUTO"
+        nama: "GAME 4",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Sweet Bonanza SUPER SCATTER
+
+✅❎❎ 22x Manual DC OFF
+❎✅❎ 9x Quick DC ON
+❎✅✅ 15x Manual DC OFF
+✅❎✅ 10x Quick DC ON
+❎✅❎ 23x Quick DC ON`],
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     },
 
     5: {
-        nama: "MAHJONG WAYS 5",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "20 AUTO - 5 MANUAL - 15 AUTO"
+        nama: "GAME 5",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bounty SHOWDOWN
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     },
 
     6: {
-        nama: "MAHJONG WAYS 6",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "15 AUTO - 10 MANUAL - 15 AUTO"
+        nama: "GAME 6",
+        saran: ["GAME 6 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     7: {
-        nama: "MAHJONG WAYS 7",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 5 MANUAL - 20 AUTO"
+        nama: "GAME 7",
+        saran: ["GAME 7 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     8: {
-        nama: "MAHJONG WAYS 8",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "20 AUTO - 10 MANUAL - 10 AUTO"
+        nama: "GAME 8",
+        saran: ["GAME 8 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     9: {
-        nama: "MAHJONG WAYS 9",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "15 AUTO - 5 MANUAL - 20 AUTO"
+        nama: "GAME 9",
+        saran: ["GAME 9 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     10: {
-        nama: "MAHJONG WAYS 10",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 10 MANUAL - 20 AUTO"
+        nama: "GAME 10",
+        saran: ["GAME 10 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     11: {
-        nama: "MAHJONG WAYS 11",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "20 AUTO - 5 MANUAL - 15 AUTO"
+        nama: "GAME 11",
+        saran: ["GAME 11 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     12: {
-        nama: "MAHJONG WAYS 12",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "15 AUTO - 10 MANUAL - 20 AUTO"
+        nama: "GAME 12",
+        saran: ["GAME 12 - SARAN SEMENTARA"],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     13: {
-        nama: "MAHJONG WAYS 13",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 5 MANUAL - 20 AUTO"
+        nama: "GAME 13",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Dragon Hatch
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 5x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 7x SPIN MANUAL TURBO OFF`],
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     },
 
     14: {
-        nama: "MAHJONG WAYS 14",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "20 AUTO - 10 MANUAL - 10 AUTO"
+        nama: "GAME 14",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Aztec Gems
+
+✅❎❎ 16x Manual DC OFF
+❎✅❎ 9x Quick DC ON
+❎✅✅ 15x Manual DC OFF
+✅❎✅ 8x Quick DC ON
+❎✅❎ 30x Quick DC ON`],
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     },
 
     15: {
-        nama: "MAHJONG WAYS 15",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "15 AUTO - 5 MANUAL - 20 AUTO"
+        nama: "GAME 15",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Pinata WINS
+
+🔥 30x SPIN MANUAL TURBO OFF
+🔥 15x SPIN OTOMATIS TURBO ON
+🔥 7x SPIN MANUAL TURBO OFF`],
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     },
 
     16: {
-        nama: "MAHJONG WAYS 16",
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 10 MANUAL - 20 AUTO"
+        nama: "GAME 16",
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Wisdom OF ANTHENA 1000
+
+✅❎❎ 10x Manual DC OFF
+❎✅❎ 9x Quick DC ON
+❎✅✅ 18x Manual DC OFF
+✅❎✅ 15x Quick DC ON
+❎✅❎ 20x Quick DC ON`],
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     }
-
 };
-
 
 // ========================================
 // GAME 17 - 36
@@ -116,156 +175,207 @@ const dataGame = {
 
 for (let i = 17; i <= 36; i++) {
     dataGame[i] = {
-        nama: `MAHJONG WAYS ${i}`,
-        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku.`],
-        pola: "10 AUTO - 5 MANUAL - 20 AUTO"
+        nama: `GAME ${i}`,
+        saran: [`GAME ${i} - SARAN SEMENTARA`],
+        pola: [
+            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
+        ]
     };
 }
 
+// ========================================
+// VARIABEL
+// ========================================
+
+let hasilCopy = "";
 
 // ========================================
-// RANDOM
+// ACAK DATA
 // ========================================
 
-function randomGame() {
-    const nomor = Math.floor(Math.random() * 36) + 1;
-    return dataGame[nomor];
+function ambilAcak(data) {
+    if (!Array.isArray(data) || data.length === 0) {
+        return "";
+    }
+
+    return data[Math.floor(Math.random() * data.length)];
 }
 
-
 // ========================================
-// COPY TEKS
+// COPY TEXT
 // ========================================
 
-function copyTeks(teks, button) {
+async function copyTeks(text, button) {
 
-    navigator.clipboard.writeText(teks)
-        .then(() => {
+    if (!text) return;
 
-            const textLama = button.textContent;
+    let berhasil = false;
 
-            button.textContent = "✅ TERSALIN";
+    try {
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            berhasil = true;
+        }
+    } catch (error) {
+        console.log("Clipboard API gagal:", error);
+    }
 
-            setTimeout(() => {
-                button.textContent = textLama;
-            }, 1500);
+    if (!berhasil) {
 
-        })
-        .catch(() => {
-            alert("Gagal menyalin teks");
-        });
+        const textarea = document.createElement("textarea");
+
+        textarea.value = text;
+        textarea.style.position = "fixed";
+        textarea.style.top = "0";
+        textarea.style.left = "-9999px";
+
+        document.body.appendChild(textarea);
+
+        textarea.focus();
+        textarea.select();
+
+        try {
+            berhasil = document.execCommand("copy");
+        } catch (error) {
+            console.log("Copy gagal:", error);
+        }
+
+        textarea.remove();
+    }
+
+    if (button && berhasil) {
+
+        const teksAwal = button.innerHTML;
+
+        button.innerHTML = "COPIED ✔";
+        button.disabled = true;
+
+        setTimeout(function () {
+            button.innerHTML = teksAwal;
+            button.disabled = false;
+        }, 1500);
+    }
 }
-
 
 // ========================================
 // SARAN GAME
 // ========================================
 
-function saranGame(game) {
+function saranGame(id, button) {
 
-    if (!game || !game.saran) {
-        return "Belum ada saran.";
+    const game = dataGame[id];
+
+    if (!game) {
+        console.error("Game tidak ditemukan:", id);
+        return;
     }
 
-    return game.saran[Math.floor(Math.random() * game.saran.length)];
-}
+    const hasil = ambilAcak(game.saran);
 
+    copyTeks(hasil, button);
+}
 
 // ========================================
 // POLA GAME
 // ========================================
 
-function polaGame(game) {
+function polaGame(id, button) {
 
-    if (!game || !game.pola) {
-        return "Belum ada pola.";
+    const game = dataGame[id];
+
+    if (!game) {
+        console.error("Game tidak ditemukan:", id);
+        return;
     }
 
-    return game.pola;
+    const hasil = ambilAcak(game.pola);
+
+    copyTeks(hasil, button);
 }
 
-
 // ========================================
-// BUAT GAME BOX
+// BUAT 36 GAME
 // ========================================
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("gameContainer");
 
     if (!container) {
-        console.error("gameContainer tidak ditemukan!");
+        console.error("❌ gameContainer tidak ditemukan!");
         return;
     }
+
+    container.innerHTML = "";
 
     for (let i = 1; i <= 36; i++) {
 
         const game = dataGame[i];
 
-        const box = document.createElement("div");
-        box.className = "game-box";
+        if (!game) continue;
 
-        const imageWrapper = document.createElement("div");
-        imageWrapper.className = "image-wrapper";
+        const gameBox = document.createElement("article");
 
-        const image = document.createElement("img");
-        image.className = "game-image";
+        gameBox.className = "game-box";
 
-        // PATH GAMBAR ASLI
-        image.src = new URL(
-            `./img/game${i}.jpg`,
-            document.baseURI
-        ).href;
+        // FOTO HARUS DI:
+        // img/game1.jpg
+        // img/game2.jpg
+        // ...
+        // img/game36.jpg
 
-        image.alt = game.nama;
+        const imagePath = `./img/game${i}.jpg`;
 
-        image.onerror = () => {
-            console.error(`Gambar tidak ditemukan: img/game${i}.jpg`);
-        };
+        gameBox.innerHTML = `
 
-        imageWrapper.appendChild(image);
+            <div class="image-wrapper">
 
+                <img
+                    src="${imagePath}"
+                    alt="${game.nama}"
+                    loading="lazy"
+                >
 
-        const title = document.createElement("h2");
-        title.textContent = game.nama;
+            </div>
 
+            <div class="game-title">
+                ${game.nama}
+            </div>
 
-        const saran = document.createElement("div");
-        saran.className = "saran";
+            <div class="button-group">
 
-        saran.textContent = saranGame(game);
+                <button
+                    type="button"
+                    class="btn btn-saran"
+                    onclick="saranGame(${i}, this)"
+                >
+                    🎯 SARAN GAME
+                </button>
 
+                <button
+                    type="button"
+                    class="btn btn-pola"
+                    onclick="polaGame(${i}, this)"
+                >
+                    🔥 POLA GAME
+                </button>
 
-        const pola = document.createElement("div");
-        pola.className = "pola";
+            </div>
+        `;
 
-        pola.textContent = `🎯 POLA: ${polaGame(game)}`;
+        const img = gameBox.querySelector("img");
 
-
-        const button = document.createElement("button");
-        button.className = "copy-btn";
-        button.textContent = "📋 COPY";
-
-        button.addEventListener("click", () => {
-
-            const teks =
-                `${game.nama}\n\n` +
-                `${saran.textContent}\n\n` +
-                `${pola.textContent}`;
-
-            copyTeks(teks, button);
-
+        img.addEventListener("load", function () {
+            console.log(`✅ Foto game${i}.jpg berhasil dimuat`);
         });
 
+        img.addEventListener("error", function () {
+            console.error(`❌ Foto game${i}.jpg TIDAK ditemukan`);
+            this.alt = `Foto game${i} tidak ditemukan`;
+        });
 
-        box.appendChild(imageWrapper);
-        box.appendChild(title);
-        box.appendChild(saran);
-        box.appendChild(pola);
-        box.appendChild(button);
-
-        container.appendChild(box);
+        container.appendChild(gameBox);
     }
 
+    console.log("✅ 36 GAME SELESAI DIBUAT");
 });
-```
