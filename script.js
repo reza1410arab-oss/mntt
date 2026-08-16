@@ -12,9 +12,7 @@ const dataGame = {
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     2: {
@@ -26,9 +24,7 @@ const dataGame = {
 ❎✅✅ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     3: {
@@ -39,9 +35,7 @@ const dataGame = {
 🔥 25x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 5x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     4: {
@@ -53,9 +47,7 @@ const dataGame = {
 ❎✅✅ 15x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 23x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     5: {
@@ -66,9 +58,7 @@ const dataGame = {
 🔥 8x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 15x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     6: {
@@ -80,9 +70,7 @@ const dataGame = {
 ❎✅✅ 17x Manual DC OFF
 ✅❎✅ 7x Quick DC ON
 ❎✅❎ 15x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     7: {
@@ -93,9 +81,7 @@ const dataGame = {
 🔥 5x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 17x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     8: {
@@ -107,9 +93,7 @@ const dataGame = {
 ❎✅✅ 13x Manual DC OFF
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 25x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     9: {
@@ -120,9 +104,7 @@ const dataGame = {
 🔥 17x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     10: {
@@ -134,9 +116,7 @@ const dataGame = {
 ❎✅❎ 8x Quick DC ON
 ✅❎✅ 10x Quick DC ON
 ❎✅❎ 30x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     11: {
@@ -147,9 +127,7 @@ const dataGame = {
 🔥 12x SPIN MANUAL TURBO OFF
 🔥 10x SPIN OTOMATIS TURBO ON
 🔥 8x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     12: {
@@ -161,9 +139,7 @@ const dataGame = {
 ❎✅✅ 8x Manual DC OFF
 ✅❎✅ 20x Quick DC ON
 ❎✅❎ 15x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     13: {
@@ -174,9 +150,7 @@ const dataGame = {
 🔥 5x SPIN MANUAL TURBO OFF
 🔥 20x SPIN OTOMATIS TURBO ON
 🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     14: {
@@ -188,9 +162,7 @@ const dataGame = {
 ❎✅✅ 15x Manual DC OFF
 ✅❎✅ 8x Quick DC ON
 ❎✅❎ 30x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     },
 
     15: {
@@ -200,9 +172,7 @@ const dataGame = {
 🔥 30x SPIN MANUAL TURBO OFF
 🔥 15x SPIN OTOMATIS TURBO ON
 🔥 7x SPIN MANUAL TURBO OFF`],
-        pola: [
-            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
-        ]
+        pola: ["Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."]
     },
 
     16: {
@@ -214,9 +184,7 @@ const dataGame = {
 ❎✅✅ 18x Manual DC OFF
 ✅❎✅ 15x Quick DC ON
 ❎✅❎ 20x Quick DC ON`],
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     }
 
 };
@@ -230,21 +198,15 @@ for (let i = 17; i <= 36; i++) {
 
     dataGame[i] = {
         nama: `GAME ${i}`,
-
-        saran: [
-            `GAME ${i} - SARAN SEMENTARA`
-        ],
-
-        pola: [
-            "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
-        ]
+        saran: [`GAME ${i} - SARAN SEMENTARA`],
+        pola: ["Pola ringan: 5 putaran → 5 putaran → jeda singkat."]
     };
 
 }
 
 
 // ========================================
-// AMBIL DATA ACAK
+// ACAK DATA
 // ========================================
 
 function ambilAcak(data) {
@@ -285,8 +247,6 @@ async function copyTeks(text, button) {
     }
 
 
-    // Fallback untuk file:// / browser yang tidak mendukung Clipboard API
-
     if (!berhasil) {
 
         const textarea = document.createElement("textarea");
@@ -294,8 +254,8 @@ async function copyTeks(text, button) {
         textarea.value = text;
 
         textarea.style.position = "fixed";
-        textarea.style.top = "0";
         textarea.style.left = "-9999px";
+        textarea.style.top = "0";
 
         document.body.appendChild(textarea);
 
@@ -317,20 +277,16 @@ async function copyTeks(text, button) {
     }
 
 
-    // Efek tombol
-
     if (button && berhasil) {
 
         const teksAwal = button.innerHTML;
 
         button.innerHTML = "COPIED ✔";
-
         button.disabled = true;
 
         setTimeout(function () {
 
             button.innerHTML = teksAwal;
-
             button.disabled = false;
 
         }, 1500);
@@ -349,16 +305,11 @@ function saranGame(id, button) {
     const game = dataGame[id];
 
     if (!game) {
-
         console.error("Game tidak ditemukan:", id);
-
         return;
-
     }
 
-    const hasil = ambilAcak(game.saran);
-
-    copyTeks(hasil, button);
+    copyTeks(ambilAcak(game.saran), button);
 
 }
 
@@ -372,22 +323,17 @@ function polaGame(id, button) {
     const game = dataGame[id];
 
     if (!game) {
-
         console.error("Game tidak ditemukan:", id);
-
         return;
-
     }
 
-    const hasil = ambilAcak(game.pola);
-
-    copyTeks(hasil, button);
+    copyTeks(ambilAcak(game.pola), button);
 
 }
 
 
 // ========================================
-// BUAT 36 KOTAK GAME
+// BUAT 36 GAME
 // ========================================
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -396,30 +342,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!container) {
 
-        console.error("❌ gameContainer tidak ditemukan!");
-
+        console.error("❌ ID gameContainer tidak ditemukan!");
         return;
 
     }
 
 
-    // Bersihkan isi container
-
     container.innerHTML = "";
 
-
-    // Buat game 1 sampai 36
 
     for (let i = 1; i <= 36; i++) {
 
         const game = dataGame[i];
 
         if (!game) {
-
-            console.error("❌ Data game tidak ditemukan:", i);
-
+            console.error("❌ Data game tidak ada:", i);
             continue;
-
         }
 
 
@@ -429,30 +367,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // ========================================
-        // PATH FOTO
-        // FOTO BERADA DI FOLDER img
+        // PATH GAMBAR
         // ========================================
 
-        const imagePath = `./img/game${i}.jpg`;
+        // index.html berada di luar folder img
+        // sehingga gambar berada di:
+        // ./img/game1.jpg
+        // ./img/game2.jpg
+        // dst.
 
+        const imagePath =
+            new URL(`./img/game${i}.jpg`, document.baseURI).href;
+
+
+        // ========================================
+        // HTML GAME
+        // ========================================
 
         gameBox.innerHTML = `
 
             <div class="image-wrapper">
 
                 <img
+                    class="game-image"
                     src="${imagePath}"
                     alt="${game.nama}"
-                    loading="lazy"
                 >
 
             </div>
 
-
             <div class="game-title">
                 ${game.nama}
             </div>
-
 
             <div class="button-group">
 
@@ -463,7 +409,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 >
                     🎯 SARAN GAME
                 </button>
-
 
                 <button
                     type="button"
@@ -479,15 +424,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // ========================================
-        // CEK FOTO
+        // CEK GAMBAR
         // ========================================
 
-        const img = gameBox.querySelector("img");
+        const img = gameBox.querySelector(".game-image");
 
 
         img.addEventListener("load", function () {
 
-            console.log(`✅ Foto game${i}.jpg berhasil dimuat`);
+            console.log(
+                `✅ FOTO GAME ${i} BERHASIL:`,
+                this.src
+            );
 
         });
 
@@ -495,21 +443,26 @@ document.addEventListener("DOMContentLoaded", function () {
         img.addEventListener("error", function () {
 
             console.error(
-                `❌ Foto tidak ditemukan: ${imagePath}`
+                `❌ FOTO GAME ${i} GAGAL:`,
+                this.src
             );
 
-            this.style.display = "none";
+            this.alt = `Foto game ${i} tidak ditemukan`;
 
         });
 
 
-        // Masukkan kotak ke container
+        // ========================================
+        // MASUKKAN KE CONTAINER
+        // ========================================
 
         container.appendChild(gameBox);
 
     }
 
 
-    console.log("✅ 36 game berhasil dibuat.");
+    console.log("================================");
+    console.log("✅ 36 GAME BERHASIL DIBUAT");
+    console.log("================================");
 
 });
