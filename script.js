@@ -5,7 +5,6 @@
 // ========================================
 
 const dataGame = {
-
     1: {
         nama: "MAHJONG WAYS 1",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong WAYS
@@ -188,7 +187,6 @@ const dataGame = {
 ❎✅❎ 20x Quick DC ON`,
         pola: "Pola ringan: 5 putaran → 5 putaran → jeda singkat."
     }
-
 };
 
 
@@ -197,7 +195,6 @@ const dataGame = {
 // ========================================
 
 for (let i = 17; i <= 36; i++) {
-
     dataGame[i] = {
         nama: "NAMA GAME " + i,
 
@@ -210,40 +207,46 @@ for (let i = 17; i <= 36; i++) {
 
         pola: "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
     };
-
 }
 
 
 // ========================================
-// TAMPILKAN KE HALAMAN
+// RENDER GAME
 // ========================================
 
-document.addEventListener("DOMContentLoaded", function () {
+function renderGames() {
+    const container = document.getElementById("gameContainer");
 
-    const gameContainer = document.getElementById("gameContainer");
-
-    if (!gameContainer) {
-        console.error("ERROR: gameContainer tidak ditemukan!");
+    if (!container) {
+        console.error("gameContainer tidak ditemukan.");
         return;
     }
 
-    gameContainer.innerHTML = "";
+    container.innerHTML = "";
 
-    Object.entries(dataGame).forEach(function ([nomor, game]) {
-
+    Object.entries(dataGame).forEach(([nomor, game]) => {
         const card = document.createElement("div");
         card.className = "game-card";
 
         const nomorGame = document.createElement("div");
         nomorGame.className = "nomor";
-        nomorGame.textContent = "GAME " + nomor;
+        nomorGame.textContent = `GAME ${nomor}`;
 
         const judul = document.createElement("h2");
         judul.textContent = game.nama;
 
         const saran = document.createElement("div");
         saran.className = "saran";
-        saran.innerHTML = game.saran.replace(/\n/g, "<br>");
+
+        game.saran.split("\n").forEach((baris, index) => {
+            if (index > 0) {
+                saran.appendChild(document.createElement("br"));
+            }
+
+            saran.appendChild(
+                document.createTextNode(baris)
+            );
+        });
 
         const pola = document.createElement("div");
         pola.className = "pola";
@@ -254,13 +257,22 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(saran);
         card.appendChild(pola);
 
-        gameContainer.appendChild(card);
-
+        container.appendChild(card);
     });
 
     console.log(
         "GAME BERHASIL DIMUAT:",
         Object.keys(dataGame).length
     );
+}
 
-});
+
+// ========================================
+// START
+// ========================================
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderGames);
+} else {
+    renderGames();
+}
