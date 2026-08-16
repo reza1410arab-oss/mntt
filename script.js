@@ -188,603 +188,339 @@ const dataGame = {
     }
 
 };
-
-
 // ========================================
 // GAME 17 - 36
 // ========================================
 
-for (let i = 17; i <= 36; i++) {
+const dataGameLanjutan = {
 
-    dataGame[i] = {
-        nama: `GAME ${i}`,
+    17: {
+        nama: "NAMA GAME 17",
 
-        saran: [
-            `Dicoba bermain di game GAME ${i} bos, semoga beruntung 🎯
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 17
 
-🔥 10x SPIN OTOMATIS
-🔥 10x SPIN MANUAL
-🔥 15x SPIN OTOMATIS
-🔥 5x SPIN MANUAL`
-        ],
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
 
         pola: [
-            `Pola GAME ${i}: 10 putaran → jeda → lanjut 10 putaran.`
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
         ]
-    };
-
-}
+    },
 
 
-// ========================================
-// ACAK DATA
-// ========================================
+    18: {
+        nama: "NAMA GAME 18",
 
-function ambilAcak(data) {
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 18
 
-    if (!Array.isArray(data) || data.length === 0) {
-        return "";
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    19: {
+        nama: "NAMA GAME 19",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 19
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    20: {
+        nama: "NAMA GAME 20",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 20
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    21: {
+        nama: "NAMA GAME 21",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 21
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    22: {
+        nama: "NAMA GAME 22",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 22
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    23: {
+        nama: "NAMA GAME 23",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 23
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    24: {
+        nama: "NAMA GAME 24",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 24
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    25: {
+        nama: "NAMA GAME 25",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 25
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    26: {
+        nama: "NAMA GAME 26",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 26
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    27: {
+        nama: "NAMA GAME 27",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 27
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    28: {
+        nama: "NAMA GAME 28",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 28
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    29: {
+        nama: "NAMA GAME 29",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 29
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    30: {
+        nama: "NAMA GAME 30",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 30
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    31: {
+        nama: "NAMA GAME 31",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 31
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    32: {
+        nama: "NAMA GAME 32",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 32
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    33: {
+        nama: "NAMA GAME 33",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 33
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    34: {
+        nama: "NAMA GAME 34",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 34
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    35: {
+        nama: "NAMA GAME 35",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 35
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
+    },
+
+
+    36: {
+        nama: "NAMA GAME 36",
+
+        saran: [`Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME 36
+
+🔥 10x SPIN OTOMATIS TURBO ON
+🔥 8x SPIN MANUAL TURBO OFF
+🔥 20x SPIN OTOMATIS TURBO ON
+🔥 15x SPIN MANUAL TURBO OFF`],
+
+        pola: [
+            "Pola santai: 10 putaran biasa → istirahat sebentar → lanjut 10 putaran."
+        ]
     }
 
-    return data[
-        Math.floor(Math.random() * data.length)
-    ];
-
-}
+};
 
 
 // ========================================
-// COPY TEXT
+// GABUNGKAN GAME 17 - 36
+// KE dataGame UTAMA
 // ========================================
 
-async function copyTeks(text, button) {
+Object.assign(dataGame, dataGameLanjutan);
 
-    if (!text) return;
 
-    let berhasil = false;
-
-    try {
-
-        if (
-            navigator.clipboard &&
-            window.isSecureContext
-        ) {
-
-            await navigator.clipboard.writeText(text);
-
-            berhasil = true;
-        }
-
-    } catch (error) {
-
-        console.log("Clipboard API gagal:", error);
-
-    }
-
-
-    // Fallback
-    if (!berhasil) {
-
-        const textarea =
-            document.createElement("textarea");
-
-        textarea.value = text;
-
-        textarea.style.position = "fixed";
-        textarea.style.left = "-9999px";
-        textarea.style.top = "0";
-
-        document.body.appendChild(textarea);
-
-        textarea.focus();
-        textarea.select();
-
-        try {
-
-            berhasil =
-                document.execCommand("copy");
-
-        } catch (error) {
-
-            console.log("Copy gagal:", error);
-
-        }
-
-        textarea.remove();
-
-    }
-
-
-    if (button && berhasil) {
-
-        const teksAwal =
-            button.innerHTML;
-
-        button.innerHTML =
-            "COPIED ✔";
-
-        button.disabled = true;
-
-        setTimeout(() => {
-
-            button.innerHTML =
-                teksAwal;
-
-            button.disabled = false;
-
-        }, 1500);
-
-    }
-
-}
-
-
-// ========================================
-// COPY FOTO GAME
-// ========================================
-
-async function copyFotoGame(img, button) {
-
-    if (!img) {
-        console.error("❌ Foto tidak ditemukan!");
-        return;
-    }
-
-    try {
-
-        // Tunggu gambar selesai dimuat
-        if (
-            !img.complete ||
-            img.naturalWidth === 0
-        ) {
-
-            await new Promise((resolve, reject) => {
-
-                img.addEventListener(
-                    "load",
-                    resolve,
-                    { once: true }
-                );
-
-                img.addEventListener(
-                    "error",
-                    reject,
-                    { once: true }
-                );
-
-            });
-
-        }
-
-
-        // Buat canvas
-        const canvas =
-            document.createElement("canvas");
-
-        canvas.width =
-            img.naturalWidth;
-
-        canvas.height =
-            img.naturalHeight;
-
-
-        const ctx =
-            canvas.getContext("2d");
-
-        ctx.drawImage(
-            img,
-            0,
-            0
-        );
-
-
-        // Buat PNG
-        const blob =
-            await new Promise((resolve) => {
-
-                canvas.toBlob(
-                    resolve,
-                    "image/png"
-                );
-
-            });
-
-
-        if (!blob) {
-            throw new Error(
-                "Gagal membuat gambar."
-            );
-        }
-
-
-        // Pastikan browser support
-        if (
-            !navigator.clipboard ||
-            typeof ClipboardItem === "undefined"
-        ) {
-
-            throw new Error(
-                "Browser tidak mendukung copy foto."
-            );
-
-        }
-
-
-        // COPY FOTO
-        await navigator.clipboard.write([
-            new ClipboardItem({
-                "image/png": blob
-            })
-        ]);
-
-
-        // Berhasil
-        const teksAwal =
-            button.innerHTML;
-
-        button.innerHTML =
-            "COPIED FOTO ✔";
-
-        button.disabled = true;
-
-
-        setTimeout(() => {
-
-            button.innerHTML =
-                teksAwal;
-
-            button.disabled = false;
-
-        }, 1500);
-
-
-        console.log(
-            "✅ FOTO BERHASIL DICOPY:",
-            img.src
-        );
-
-
-    } catch (error) {
-
-        console.error(
-            "❌ COPY FOTO GAGAL:",
-            error
-        );
-
-
-        const teksAwal =
-            button.innerHTML;
-
-        button.innerHTML =
-            "GAGAL COPY ❌";
-
-        button.disabled = true;
-
-
-        setTimeout(() => {
-
-            button.innerHTML =
-                teksAwal;
-
-            button.disabled = false;
-
-        }, 2000);
-
-    }
-
-}
-
-
-// ========================================
-// SARAN GAME
-// ========================================
-
-function saranGame(id, button) {
-
-    const game =
-        dataGame[id];
-
-    if (!game) {
-
-        console.error(
-            "Game tidak ditemukan:",
-            id
-        );
-
-        return;
-    }
-
-
-    const teks =
-        ambilAcak(game.saran);
-
-
-    copyTeks(
-        teks,
-        button
-    );
-
-}
-
-
-// ========================================
-// POLA GAME
-// KLIK = COPY FOTO
-// ========================================
-
-function polaGame(id, button) {
-
-    const game =
-        dataGame[id];
-
-    if (!game) {
-
-        console.error(
-            "Game tidak ditemukan:",
-            id
-        );
-
-        return;
-    }
-
-
-    const gameBox =
-        button.closest(".game-box");
-
-
-    if (!gameBox) {
-
-        console.error(
-            "Game box tidak ditemukan!"
-        );
-
-        return;
-    }
-
-
-    const img =
-        gameBox.querySelector(
-            ".game-image"
-        );
-
-
-    if (!img) {
-
-        console.error(
-            "Foto game tidak ditemukan!"
-        );
-
-        return;
-    }
-
-
-    // JANGAN COPY TEKS POLA
-    // LANGSUNG COPY FOTO
-
-    copyFotoGame(
-        img,
-        button
-    );
-
-}
-
-
-// ========================================
-// BUAT 36 GAME
-// ========================================
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        const container =
-            document.getElementById(
-                "gameContainer"
-            );
-
-
-        if (!container) {
-
-            console.error(
-                "❌ ID gameContainer tidak ditemukan!"
-            );
-
-            return;
-        }
-
-
-        // Bersihkan container
-        container.innerHTML = "";
-
-
-        // ========================================
-        // GAME 1 - 36
-        // ========================================
-
-        for (
-            let i = 1;
-            i <= 36;
-            i++
-        ) {
-
-            const game =
-                dataGame[i];
-
-
-            if (!game) {
-
-                console.error(
-                    "❌ Data game tidak ada:",
-                    i
-                );
-
-                continue;
-            }
-
-
-            // CARD
-            const gameBox =
-                document.createElement(
-                    "article"
-                );
-
-            gameBox.className =
-                "game-box";
-
-
-            // ========================================
-            // FOTO
-            // ========================================
-
-            const imagePath =
-                `./game${i}.jpg`;
-
-
-            // ========================================
-            // HTML
-            // ========================================
-
-            gameBox.innerHTML = `
-
-                <div class="image-wrapper">
-
-                    <img
-                        class="game-image"
-                        src="${imagePath}"
-                        alt="${game.nama}"
-                    >
-
-                </div>
-
-
-                <div class="game-title">
-                    ${game.nama}
-                </div>
-
-
-                <div class="button-group">
-
-                    <button
-                        type="button"
-                        class="btn btn-saran"
-                    >
-                        🎯 SARAN GAME
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="btn btn-pola"
-                    >
-                        🔥 POLA GAME
-                    </button>
-
-                </div>
-
-            `;
-
-
-            // ========================================
-            // BUTTON
-            // ========================================
-
-            const tombolSaran =
-                gameBox.querySelector(
-                    ".btn-saran"
-                );
-
-            const tombolPola =
-                gameBox.querySelector(
-                    ".btn-pola"
-                );
-
-
-            // SARAN
-            tombolSaran.addEventListener(
-                "click",
-                function () {
-
-                    saranGame(
-                        i,
-                        this
-                    );
-
-                }
-            );
-
-
-            // POLA = COPY FOTO
-            tombolPola.addEventListener(
-                "click",
-                function () {
-
-                    polaGame(
-                        i,
-                        this
-                    );
-
-                }
-            );
-
-
-            // ========================================
-            // CEK FOTO
-            // ========================================
-
-            const img =
-                gameBox.querySelector(
-                    ".game-image"
-                );
-
-
-            img.addEventListener(
-                "load",
-                function () {
-
-                    console.log(
-                        `✅ FOTO GAME ${i} BERHASIL:`,
-                        this.src
-                    );
-
-                }
-            );
-
-
-            img.addEventListener(
-                "error",
-                function () {
-
-                    console.error(
-                        `❌ FOTO GAME ${i} GAGAL:`,
-                        this.src
-                    );
-
-                    this.alt =
-                        `Foto game ${i} tidak ditemukan`;
-
-                }
-            );
-
-
-            // Masukkan card
-            container.appendChild(
-                gameBox
-            );
-
-        }
-
-
-        console.log(
-            "================================"
-        );
-
-        console.log(
-            "✅ 36 GAME BERHASIL DIBUAT"
-        );
-
-        console.log(
-            "================================"
-        );
-
-    }
-);
