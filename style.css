@@ -1,49 +1,20 @@
+```css
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --bg: #020202;
-    --card: #111111;
-    --border: rgba(255, 255, 255, 0.15);
-    --text: #ffffff;
-    --muted: #9b9b9b;
-}
-
-/* ========================================
-   BODY
-======================================== */
-
-html {
+html,
+body {
     width: 100%;
     min-height: 100%;
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-
-    padding: 30px 18px;
-
-    color: var(--text);
-
-    font-family: "Segoe UI", Arial, sans-serif;
-
-    background:
-        radial-gradient(
-            circle at 20% 10%,
-            rgba(255, 255, 255, 0.10),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 80% 90%,
-            rgba(255, 255, 255, 0.06),
-            transparent 35%
-        ),
-        #020202;
-
     overflow-x: hidden;
 }
 
@@ -52,8 +23,9 @@ body {
 ======================================== */
 
 .app {
-    width: min(1100px, 100%);
-    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 10px 40px;
 }
 
 /* ========================================
@@ -61,39 +33,28 @@ body {
 ======================================== */
 
 .header {
+    width: 100%;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
-.label {
-    color: #ffffff;
+.header .label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
 
-    font-size: 13px;
+.header h1 {
+    font-size: 24px;
     font-weight: 900;
-
-    letter-spacing: 4px;
-
-    text-shadow:
-        0 0 15px rgba(255, 255, 255, 0.8);
 }
 
-h1 {
-    margin: 10px 0;
-
-    color: #ffffff;
-
-    font-size: clamp(28px, 5vw, 45px);
-    font-weight: 1000;
-
-    text-shadow:
-        0 0 10px #ffffff,
-        0 0 25px #777777;
-
-    animation: titleGlow 2s infinite alternate;
-}
-
-.subtitle {
-    color: var(--muted);
+.header .by {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #888;
 }
 
 /* ========================================
@@ -102,76 +63,64 @@ h1 {
 
 .game-container {
     width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 330px));
-
+    grid-template-columns: repeat(2, 165px);
     justify-content: center;
 
-    gap: 25px;
+    gap: 12px;
 }
 
 /* ========================================
-   GAME BOX
+   GAME CARD
 ======================================== */
 
 .game-box {
-    position: relative;
+    width: 165px;
+    overflow: hidden;
 
-    width: 330px;
+    background: linear-gradient(
+        145deg,
+        #2b2b2b,
+        #111111
+    );
 
-    padding: 16px;
-
-    border-radius: 22px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(35, 35, 35, 0.95),
-            rgba(8, 8, 8, 0.95)
-        );
-
-    border: 1px solid var(--border);
+    border: 1px solid #3c3c3c;
+    border-radius: 12px;
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.7),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+        0 5px 15px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
-    text-align: center;
+    padding: 7px;
 
     transition:
-        transform 0.35s,
-        box-shadow 0.35s;
-
-    overflow: hidden;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .game-box:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 
     box-shadow:
-        0 20px 45px rgba(0, 0, 0, 0.8),
-        0 0 25px rgba(255, 255, 255, 0.25);
+        0 8px 20px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.08);
 }
 
 /* ========================================
-   FOTO
+   IMAGE
 ======================================== */
 
 .image-wrapper {
-    position: relative;
-    z-index: 2;
-
     width: 100%;
-    height: 240px;
+    aspect-ratio: 1 / 0.82;
 
     overflow: hidden;
+    border-radius: 8px;
 
-    border-radius: 16px;
-
-    background: #000000;
+    background: #111;
 }
 
 .game-image {
@@ -183,251 +132,133 @@ h1 {
     object-fit: cover;
     object-position: center;
 
-    transition: transform 0.4s;
-}
-
-.game-box:hover .game-image {
-    transform: scale(1.05);
+    border-radius: 8px;
 }
 
 /* ========================================
-   JUDUL GAME
+   TITLE
 ======================================== */
 
-.game-title {
-    position: relative;
-    z-index: 2;
-
-    margin-top: 15px;
-
-    color: #ffffff;
-
-    font-size: 20px;
-    font-weight: 900;
-
-    text-shadow:
-        0 0 10px rgba(255, 255, 255, 0.8);
+.game-box h2 {
+    display: none;
 }
 
 /* ========================================
-   BUTTON GROUP
+   SARAN
 ======================================== */
 
-.button-group {
-    position: relative;
-    z-index: 2;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-
-    margin-top: 15px;
+.saran {
+    display: none;
 }
 
 /* ========================================
-   BUTTON
+   POLA
 ======================================== */
 
-button {
+.pola {
+    display: none;
+}
+
+/* ========================================
+   BUTTON AREA
+======================================== */
+
+.copy-btn {
+    width: 100%;
+    height: 28px;
+
+    margin-top: 6px;
+
     border: none;
+    border-radius: 7px;
+
+    background: linear-gradient(
+        180deg,
+        #454545,
+        #1e1e1e
+    );
+
+    color: white;
+
+    font-size: 7px;
+    font-weight: 900;
 
     cursor: pointer;
 
-    font-family: inherit;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.12),
+        0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================
+   BUTTON WRAPPER
+======================================== */
+
+.game-box::after {
+    content: "💗 SARAN & POLA       🔥 COPY GAME";
+
+    display: block;
+
+    width: 100%;
+    height: 28px;
+
+    margin-top: 5px;
+
+    border-radius: 7px;
+
+    background: linear-gradient(
+        180deg,
+        #454545,
+        #202020
+    );
+
+    color: #f1f1f1;
+
+    font-size: 6px;
     font-weight: 900;
-}
 
-.btn {
-    position: relative;
+    line-height: 28px;
+    text-align: center;
 
-    height: 45px;
-
-    border-radius: 12px;
-
-    color: #ffffff;
-
-    overflow: hidden;
-
-    transition: transform 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.06);
-}
-
-.btn:disabled {
-    cursor: default;
-    opacity: 0.8;
+    white-space: nowrap;
 }
 
 /* ========================================
-   SARAN BUTTON
+   COPY BUTTON DISEMBUNYIKAN
+   karena tombol visual dibuat oleh after
 ======================================== */
 
-.btn-saran {
-    background:
-        linear-gradient(
-            135deg,
-            #333333,
-            #ffffff
-        );
-
-    color: #000000;
-
-    box-shadow:
-        0 0 15px rgba(255, 255, 255, 0.25);
+.copy-btn {
+    display: none;
 }
 
 /* ========================================
-   POLA BUTTON
+   DESKTOP
 ======================================== */
 
-.btn-pola {
-    background:
-        linear-gradient(
-            135deg,
-            #111111,
-            #555555
-        );
+@media (min-width: 700px) {
 
-    box-shadow:
-        0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-/* ========================================
-   CARD SHINE
-======================================== */
-
-.game-box::before {
-    content: "";
-
-    position: absolute;
-
-    top: -100%;
-    left: -150%;
-
-    width: 80%;
-    height: 300%;
-
-    background:
-        linear-gradient(
-            120deg,
-            transparent,
-            rgba(255, 255, 255, 0.12),
-            transparent
-        );
-
-    transform: rotate(25deg);
-
-    animation: shine 5s infinite;
-
-    pointer-events: none;
-
-    z-index: 1;
-}
-
-@keyframes shine {
-    0% {
-        left: -150%;
+    .game-container {
+        grid-template-columns: repeat(2, 165px);
+        gap: 13px;
     }
 
-    40%,
-    100% {
-        left: 150%;
-    }
-}
-
-/* ========================================
-   BUTTON SHINE
-======================================== */
-
-.btn::after {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: -100%;
-
-    width: 70%;
-    height: 100%;
-
-    background:
-        linear-gradient(
-            120deg,
-            transparent,
-            rgba(255, 255, 255, 0.7),
-            transparent
-        );
-
-    animation: buttonLight 3s infinite;
-
-    pointer-events: none;
-}
-
-@keyframes buttonLight {
-    0% {
-        left: -100%;
-    }
-
-    50%,
-    100% {
-        left: 150%;
-    }
-}
-
-/* ========================================
-   TITLE GLOW
-======================================== */
-
-@keyframes titleGlow {
-    from {
-        text-shadow:
-            0 0 10px #ffffff;
-    }
-
-    to {
-        text-shadow:
-            0 0 30px #ffffff,
-            0 0 50px #888888;
-    }
 }
 
 /* ========================================
    MOBILE
 ======================================== */
 
-@media (max-width: 750px) {
+@media (max-width: 380px) {
 
     .game-container {
-        grid-template-columns:
-            minmax(0, 330px);
-    }
-
-}
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
-
-@media (max-width: 370px) {
-
-    body {
-        padding: 20px 10px;
-    }
-
-    .game-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 150px);
+        gap: 8px;
     }
 
     .game-box {
-        width: 100%;
-    }
-
-    .button-group {
-        grid-template-columns: 1fr;
+        width: 150px;
     }
 
 }
+```
