@@ -169,26 +169,213 @@ const dataGame = {
 ❎✅✅ 18x Manual DC OFF
 ✅❎✅ 15x Quick DC ON
 ❎✅❎ 20x Quick DC ON`
+    },
+
+    // ========================================
+    // GAME 17 - 36
+    // ========================================
+
+    17: {
+        nama: "GAME 17",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 17 terlebih dahulu.
+
+🔥 SARAN GAME 17
+🔥 MODE TURBO ON
+🔥 COBA BEBERAPA PUTARAN
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    18: {
+        nama: "GAME 18",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 18 terlebih dahulu.
+
+🔥 SARAN GAME 18
+🔥 MODE TURBO OFF
+🔥 COBA BEBERAPA PUTARAN
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    19: {
+        nama: "GAME 19",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 19 terlebih dahulu.
+
+🔥 SARAN GAME 19
+🔥 MODE MANUAL
+🔥 COBA BEBERAPA PUTARAN
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    20: {
+        nama: "GAME 20",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 20 terlebih dahulu.
+
+🔥 SARAN GAME 20
+🔥 MODE OTOMATIS
+🔥 COBA BEBERAPA PUTARAN
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    21: {
+        nama: "GAME 21",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 21 terlebih dahulu.
+
+🔥 SARAN GAME 21
+🔥 MODE TURBO ON
+🔥 MULAI DENGAN PUTARAN TERBATAS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    22: {
+        nama: "GAME 22",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 22 terlebih dahulu.
+
+🔥 SARAN GAME 22
+🔥 MODE TURBO OFF
+🔥 MULAI DENGAN PUTARAN TERBATAS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    23: {
+        nama: "GAME 23",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 23 terlebih dahulu.
+
+🔥 SARAN GAME 23
+🔥 MODE MANUAL
+🔥 MULAI DENGAN PUTARAN TERBATAS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    24: {
+        nama: "GAME 24",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 24 terlebih dahulu.
+
+🔥 SARAN GAME 24
+🔥 MODE OTOMATIS
+🔥 MULAI DENGAN PUTARAN TERBATAS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    25: {
+        nama: "GAME 25",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 25 terlebih dahulu.
+
+🔥 SARAN GAME 25
+🔥 TURBO ON
+🔥 MODE MANUAL
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    26: {
+        nama: "GAME 26",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 26 terlebih dahulu.
+
+🔥 SARAN GAME 26
+🔥 TURBO OFF
+🔥 MODE MANUAL
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    27: {
+        nama: "GAME 27",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 27 terlebih dahulu.
+
+🔥 SARAN GAME 27
+🔥 TURBO ON
+🔥 MODE OTOMATIS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    28: {
+        nama: "GAME 28",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 28 terlebih dahulu.
+
+🔥 SARAN GAME 28
+🔥 TURBO OFF
+🔥 MODE OTOMATIS
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    29: {
+        nama: "GAME 29",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 29 terlebih dahulu.
+
+🔥 SARAN GAME 29
+🔥 MODE TURBO ON
+🔥 MODE MANUAL
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    30: {
+        nama: "GAME 30",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 30 terlebih dahulu.
+
+🔥 SARAN GAME 30
+🔥 MODE TURBO OFF
+🔥 MODE MANUAL
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    31: {
+        nama: "GAME 31",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 31 terlebih dahulu.
+
+🔥 SARAN GAME 31
+🔥 MODE OTOMATIS
+🔥 TURBO ON
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    32: {
+        nama: "GAME 32",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 32 terlebih dahulu.
+
+🔥 SARAN GAME 32
+🔥 MODE OTOMATIS
+🔥 TURBO OFF
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    33: {
+        nama: "GAME 33",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 33 terlebih dahulu.
+
+🔥 SARAN GAME 33
+🔥 MODE MANUAL
+🔥 TURBO ON
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    34: {
+        nama: "GAME 34",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 34 terlebih dahulu.
+
+🔥 SARAN GAME 34
+🔥 MODE MANUAL
+🔥 TURBO OFF
+🔥 ISTIRAHAT JIKA SUDAH SELESAI`
+    },
+
+    35: {
+        nama: "GAME 35",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 35 terlebih dahulu.
+
+🔥 SARAN GAME 35
+🔥 MODE OTOMATIS
+🔥 TURBO ON
+🔥 EVALUASI HASIL SEBELUM LANJUT`
+    },
+
+    36: {
+        nama: "GAME 36",
+        saran: `Dicoba bermain di game ini bos, silakan cek game 36 terlebih dahulu.
+
+🔥 SARAN GAME 36
+🔥 MODE MANUAL
+🔥 TURBO OFF
+🔥 EVALUASI HASIL SEBELUM LANJUT`
     }
 
 };
-
-
-// ========================================
-// GAME 17 - 36
-// ========================================
-
-for (let i = 17; i <= 36; i++) {
-
-    dataGame[i] = {
-        nama: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Yakuza Honor
-
-🔥 30x SPIN MANUAL TURBO OFF
-🔥 15x SPIN OTOMATIS TURBO ON
-🔥 7x SPIN MANUAL TURBO OFF`
-    },
-
-}
 
 
 // ========================================
@@ -215,7 +402,10 @@ async function copyTeks(text, button) {
 
     } catch (error) {
 
-        console.log("Clipboard API gagal:", error);
+        console.log(
+            "Clipboard API gagal:",
+            error
+        );
 
     }
 
@@ -230,6 +420,7 @@ async function copyTeks(text, button) {
         textarea.style.position = "fixed";
         textarea.style.left = "-9999px";
         textarea.style.top = "0";
+        textarea.style.opacity = "0";
 
         document.body.appendChild(textarea);
 
@@ -243,7 +434,10 @@ async function copyTeks(text, button) {
 
         } catch (error) {
 
-            console.log("Copy gagal:", error);
+            console.log(
+                "Copy gagal:",
+                error
+            );
 
         }
 
@@ -261,6 +455,7 @@ async function copyTeks(text, button) {
             "COPIED ✔";
 
         button.disabled = true;
+
 
         setTimeout(() => {
 
@@ -284,7 +479,9 @@ async function copyFotoGame(img, button) {
 
     if (!img) {
 
-        console.error("❌ Foto tidak ditemukan!");
+        console.error(
+            "❌ Foto tidak ditemukan!"
+        );
 
         return;
     }
@@ -292,7 +489,7 @@ async function copyFotoGame(img, button) {
 
     try {
 
-        // Tunggu gambar sampai selesai
+        // Tunggu gambar selesai dimuat
         if (
             !img.complete ||
             img.naturalWidth === 0
@@ -450,7 +647,7 @@ function saranGame(id, button) {
     if (!game) {
 
         console.error(
-            "Game tidak ditemukan:",
+            "❌ Game tidak ditemukan:",
             id
         );
 
@@ -474,7 +671,9 @@ function saranGame(id, button) {
 function polaGame(id, button) {
 
     const gameBox =
-        button.closest(".game-box");
+        button.closest(
+            ".game-box"
+        );
 
 
     if (!gameBox) {
@@ -512,7 +711,7 @@ function polaGame(id, button) {
 
 
 // ========================================
-// BUAT 36 GAME
+// BUAT GAME 1 - 36
 // ========================================
 
 document.addEventListener(
@@ -528,7 +727,7 @@ document.addEventListener(
         if (!container) {
 
             console.error(
-                "❌ gameContainer tidak ditemukan!"
+                "❌ ID gameContainer tidak ditemukan!"
             );
 
             return;
@@ -537,10 +736,6 @@ document.addEventListener(
 
         container.innerHTML = "";
 
-
-        // ========================================
-        // LOOP GAME 1 - 36
-        // ========================================
 
         for (
             let i = 1;
@@ -552,17 +747,19 @@ document.addEventListener(
                 dataGame[i];
 
 
-            // Jangan pernah menghentikan loop
             if (!game) {
 
-                console.warn(
-                    `⚠️ Data GAME ${i} kosong`
+                console.error(
+                    `❌ Data GAME ${i} tidak ada!`
                 );
 
                 continue;
-
             }
 
+
+            // ========================================
+            // CARD
+            // ========================================
 
             const gameBox =
                 document.createElement(
@@ -575,16 +772,12 @@ document.addEventListener(
 
 
             // ========================================
-            // PATH FOTO
+            // FOTO
             // ========================================
 
             const imagePath =
                 `./game${i}.jpg`;
 
-
-            // ========================================
-            // CARD
-            // ========================================
 
             gameBox.innerHTML = `
 
@@ -594,7 +787,6 @@ document.addEventListener(
                         class="game-image"
                         src="${imagePath}"
                         alt="${game.nama}"
-                        loading="eager"
                     >
 
                 </div>
@@ -643,7 +835,10 @@ document.addEventListener(
                 );
 
 
-            // SARAN
+            // ========================================
+            // SARAN GAME
+            // ========================================
+
             tombolSaran.addEventListener(
                 "click",
                 function () {
@@ -657,7 +852,10 @@ document.addEventListener(
             );
 
 
-            // POLA = COPY FOTO
+            // ========================================
+            // POLA GAME = COPY FOTO
+            // ========================================
+
             tombolPola.addEventListener(
                 "click",
                 function () {
@@ -686,7 +884,7 @@ document.addEventListener(
                 function () {
 
                     console.log(
-                        `✅ GAME ${i} FOTO OK:`,
+                        `✅ FOTO GAME ${i} BERHASIL:`,
                         this.src
                     );
 
@@ -699,7 +897,7 @@ document.addEventListener(
                 function () {
 
                     console.error(
-                        `❌ GAME ${i} FOTO TIDAK DITEMUKAN:`,
+                        `❌ FOTO GAME ${i} TIDAK DITEMUKAN:`,
                         imagePath
                     );
 
@@ -711,7 +909,7 @@ document.addEventListener(
 
 
             // ========================================
-            // MASUKKAN KE WEBSITE
+            // MASUKKAN CARD
             // ========================================
 
             container.appendChild(
@@ -726,7 +924,7 @@ document.addEventListener(
         );
 
         console.log(
-            "✅ SEMUA GAME 1 - 36 DIBUAT"
+            "✅ GAME 1 - 36 BERHASIL DIBUAT"
         );
 
         console.log(
