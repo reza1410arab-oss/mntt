@@ -8,6 +8,7 @@ const dataGame = {
 
     1: {
         nama: "MAHJONG WAYS 1",
+        foto: "./images/game1.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong WAYS
 
 🔥 10x SPIN OTOMATIS TURBO ON
@@ -19,6 +20,7 @@ const dataGame = {
 
     2: {
         nama: "GATES OF GATOT KACA",
+        foto: "./images/game2.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Gates Of Gatot Kaca Super Scatter
 
 ✅❎❎ 18x Manual DC OFF
@@ -31,6 +33,7 @@ const dataGame = {
 
     3: {
         nama: "WILD BANDITO",
+        foto: "./images/game3.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bandito
 
 🔥 15x SPIN OTOMATIS TURBO ON
@@ -42,6 +45,7 @@ const dataGame = {
 
     4: {
         nama: "SWEET BONANZA",
+        foto: "./images/game4.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Sweet Bonanza SUPER SCATTER
 
 ✅❎❎ 22x Manual DC OFF
@@ -54,6 +58,7 @@ const dataGame = {
 
     5: {
         nama: "WILD BOUNTY SHOWDOWN",
+        foto: "./images/game5.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Wild Bounty SHOWDOWN
 
 🔥 10x SPIN OTOMATIS TURBO ON
@@ -65,6 +70,7 @@ const dataGame = {
 
     6: {
         nama: "GATES OF OLYMPUS",
+        foto: "./images/game6.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - GATES OF OLYMPUS
 
 ✅❎❎ 11x Manual DC OFF
@@ -77,6 +83,7 @@ const dataGame = {
 
     7: {
         nama: "MAHJONG WAYS 2",
+        foto: "./images/game7.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mahjong Ways 2
 
 🔥 10x SPIN OTOMATIS TURBO ON
@@ -88,6 +95,7 @@ const dataGame = {
 
     8: {
         nama: "STARLIGHT PRINCESS",
+        foto: "./images/game8.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Starlight Princess SUPER SCATTER
 
 ✅❎❎ 18x Manual DC OFF
@@ -100,6 +108,7 @@ const dataGame = {
 
     9: {
         nama: "CAISHEN WINS",
+        foto: "./images/game9.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Caishen WINS
 
 🔥 10x SPIN OTOMATIS TURBO ON
@@ -111,6 +120,7 @@ const dataGame = {
 
     10: {
         nama: "DRAGON POTS",
+        foto: "./images/game10.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Dragon POTS
 
 ✅❎❎ 17x Manual DC OFF
@@ -123,6 +133,7 @@ const dataGame = {
 
     11: {
         nama: "MAFIA MAYHEM",
+        foto: "./images/game11.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Mafia Mayhem
 
 🔥 20x SPIN OTOMATIS TURBO ON
@@ -134,6 +145,7 @@ const dataGame = {
 
     12: {
         nama: "GREAT GHOSTS",
+        foto: "./images/game12.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Great Ghosts
 
 ✅❎❎ 15x Manual DC OFF
@@ -146,6 +158,7 @@ const dataGame = {
 
     13: {
         nama: "DRAGON HATCH",
+        foto: "./images/game13.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Dragon Hatch
 
 🔥 10x SPIN OTOMATIS TURBO ON
@@ -157,6 +170,7 @@ const dataGame = {
 
     14: {
         nama: "AZTEC GEMS",
+        foto: "./images/game14.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Aztec Gems
 
 ✅❎❎ 16x Manual DC OFF
@@ -169,6 +183,7 @@ const dataGame = {
 
     15: {
         nama: "PINATA WINS",
+        foto: "./images/game15.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PG SOFT - Pinata WINS
 
 🔥 30x SPIN MANUAL TURBO OFF
@@ -179,6 +194,7 @@ const dataGame = {
 
     16: {
         nama: "WISDOM OF ANTHENA 1000",
+        foto: "./images/game16.jpg",
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di PRAGMATIC PLAY - Wisdom OF ANTHENA 1000
 
 ✅❎❎ 10x Manual DC OFF
@@ -199,6 +215,7 @@ for (let i = 17; i <= 36; i++) {
 
     dataGame[i] = {
         nama: "NAMA GAME " + i,
+        foto: "./images/game" + i + ".jpg",
 
         saran: `Dicoba bermain di game ini bos, lagi gacor bosku di NAMA GAME ${i}
 
@@ -233,6 +250,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const card = document.createElement("div");
         card.className = "game-card";
 
+        // FOTO
+        const gambar = document.createElement("img");
+        gambar.className = "game-image";
+        gambar.src = game.foto;
+        gambar.alt = game.nama;
+
+        // Kalau foto gagal dimuat
+        gambar.onerror = function () {
+            console.error("FOTO TIDAK DITEMUKAN:", game.foto);
+            gambar.style.display = "none";
+        };
+
         const nomorGame = document.createElement("div");
         nomorGame.className = "nomor";
         nomorGame.textContent = "GAME " + nomor;
@@ -248,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pola.className = "pola";
         pola.textContent = game.pola;
 
+        card.appendChild(gambar);
         card.appendChild(nomorGame);
         card.appendChild(judul);
         card.appendChild(saran);
