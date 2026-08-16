@@ -1,0 +1,686 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+
+    --bg:#020202;
+    --card:rgba(18,18,18,.95);
+    --border:rgba(255,255,255,.18);
+    --text:#ffffff;
+    --muted:#9b9b9b;
+    --glow:#ffffff;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    padding:30px 18px;
+
+    color:var(--text);
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+
+    background:
+
+    radial-gradient(circle at 20% 10%,
+    rgba(255,255,255,.10),
+    transparent 35%),
+
+
+    radial-gradient(circle at 80% 90%,
+    rgba(255,255,255,.06),
+    transparent 35%),
+
+
+    #020202;
+
+}
+
+
+
+.app{
+
+    width:min(1100px,100%);
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* HEADER */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.label{
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:900;
+
+    letter-spacing:4px;
+
+    text-shadow:
+
+    0 0 15px rgba(255,255,255,.8);
+
+}
+
+
+
+h1{
+
+    margin:10px 0;
+
+    font-size:clamp(28px,5vw,45px);
+
+    font-weight:1000;
+
+
+    text-shadow:
+
+    0 0 10px #ffffff,
+    0 0 25px #777;
+
+}
+
+
+
+.subtitle{
+
+    color:var(--muted);
+
+}
+
+
+
+
+
+
+/* 16 GAME */
+
+.game-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,330px);
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+
+
+
+
+
+
+/* KOTAK GAME */
+
+.game-box{
+
+    width:330px;
+
+    padding:16px;
+
+    border-radius:22px;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(35,35,35,.95),
+    rgba(8,8,8,.95)
+    );
+
+
+    border:1px solid rgba(255,255,255,.15);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.7),
+
+    inset 0 0 20px rgba(255,255,255,.05);
+
+
+    text-align:center;
+
+
+    transition:.35s;
+
+}
+
+
+
+.game-box:hover{
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.8),
+
+    0 0 25px rgba(255,255,255,.25);
+
+}
+
+
+
+
+
+
+
+
+/* FOTO TETAP */
+
+.image-wrapper{
+
+    width:100%;
+
+    height:240px;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    background:#000;
+
+}
+
+
+
+.image-wrapper img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+
+
+.game-box:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+/* JUDUL */
+
+.game-box h2{
+
+    margin:15px 0;
+
+    font-size:22px;
+
+    font-weight:900;
+
+
+    color:white;
+
+
+    text-shadow:
+
+    0 0 10px rgba(255,255,255,.8);
+
+}
+
+
+
+
+
+
+
+
+/* BUTTON */
+
+.button-group{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    font-weight:900;
+
+}
+
+
+
+
+
+.btn{
+
+    height:45px;
+
+    border-radius:12px;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.06);
+
+}
+
+
+
+
+
+
+
+.btn-saran{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #333333,
+    #ffffff
+    );
+
+
+    color:#000;
+
+
+    box-shadow:
+
+    0 0 15px rgba(255,255,255,.25);
+
+}
+
+
+
+
+
+.btn-pola{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #111111,
+    #555555
+    );
+
+
+    box-shadow:
+
+    0 0 15px rgba(255,255,255,.2);
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:750px){
+
+
+    .game-container{
+
+        grid-template-columns:330px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:360px){
+
+
+    .game-box{
+
+        width:100%;
+
+    }
+
+
+}/* EFEK KILAT BACKGROUND */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(255,255,255,.18),
+    transparent 35%);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    animation:kilat 5s infinite;
+
+}
+
+
+@keyframes kilat{
+
+    0%,85%,100%{
+
+        opacity:0;
+
+    }
+
+
+    88%{
+
+        opacity:.8;
+
+    }
+
+
+    90%{
+
+        opacity:0;
+
+    }
+
+
+    92%{
+
+        opacity:.5;
+
+    }
+
+
+    94%{
+
+        opacity:0;
+
+    }
+
+}/* =========================
+   PREMIUM EFFECT
+========================= */
+
+
+/* BACKGROUND GERAK */
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:-50%;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(255,255,255,.12),
+    transparent 35%);
+
+
+    animation:bgMove 8s infinite alternate;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+
+@keyframes bgMove{
+
+    from{
+
+        transform:translate(-5%,-5%);
+
+    }
+
+
+    to{
+
+        transform:translate(5%,5%);
+
+    }
+
+}
+
+
+
+
+
+/* CARD GLOW */
+
+.game-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.game-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:200%;
+
+    height:200%;
+
+
+    background:
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.25),
+    transparent
+    );
+
+
+    transform:rotate(25deg);
+
+    animation:shine 5s infinite;
+
+}
+
+
+
+@keyframes shine{
+
+    0%{
+
+        left:-150%;
+
+    }
+
+
+    40%,100%{
+
+        left:150%;
+
+    }
+
+}
+
+
+
+
+
+/* BUTTON BERKILAU */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:70%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.7),
+    transparent
+    );
+
+
+    animation:buttonLight 3s infinite;
+
+}
+
+
+
+@keyframes buttonLight{
+
+    0%{
+
+        left:-100%;
+
+    }
+
+
+    50%,100%{
+
+        left:150%;
+
+    }
+
+}
+
+
+
+
+/* JUDUL BERDENYUT */
+
+h1{
+
+    animation:titleGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes titleGlow{
+
+    from{
+
+        text-shadow:
+        0 0 10px white;
+
+    }
+
+
+    to{
+
+        text-shadow:
+        0 0 30px white,
+        0 0 50px #888;
+
+    }
+
+}
