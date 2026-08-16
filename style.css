@@ -1,686 +1,433 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-:root{
-
-    --bg:#020202;
-    --card:rgba(18,18,18,.95);
-    --border:rgba(255,255,255,.18);
-    --text:#ffffff;
-    --muted:#9b9b9b;
-    --glow:#ffffff;
-
+:root {
+    --bg: #020202;
+    --card: #111111;
+    --border: rgba(255, 255, 255, 0.15);
+    --text: #ffffff;
+    --muted: #9b9b9b;
 }
 
+/* ========================================
+   BODY
+======================================== */
 
+html {
+    width: 100%;
+    min-height: 100%;
+}
 
-body{
+body {
+    width: 100%;
+    min-height: 100vh;
 
-    min-height:100vh;
+    padding: 30px 18px;
 
-    padding:30px 18px;
+    color: var(--text);
 
-    color:var(--text);
-
-    font-family:"Segoe UI",Arial,sans-serif;
-
+    font-family: "Segoe UI", Arial, sans-serif;
 
     background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255, 255, 255, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 90%,
+            rgba(255, 255, 255, 0.06),
+            transparent 35%
+        ),
+        #020202;
 
-    radial-gradient(circle at 20% 10%,
-    rgba(255,255,255,.10),
-    transparent 35%),
-
-
-    radial-gradient(circle at 80% 90%,
-    rgba(255,255,255,.06),
-    transparent 35%),
-
-
-    #020202;
-
+    overflow-x: hidden;
 }
 
+/* ========================================
+   APP
+======================================== */
 
-
-.app{
-
-    width:min(1100px,100%);
-
-    margin:auto;
-
+.app {
+    width: min(1100px, 100%);
+    margin: 0 auto;
 }
 
+/* ========================================
+   HEADER
+======================================== */
 
-
-
-
-/* HEADER */
-
-.header{
-
-    text-align:center;
-
-    margin-bottom:35px;
-
+.header {
+    text-align: center;
+    margin-bottom: 35px;
 }
 
+.label {
+    color: #ffffff;
 
+    font-size: 13px;
+    font-weight: 900;
 
-.label{
-
-    color:#ffffff;
-
-    font-size:13px;
-
-    font-weight:900;
-
-    letter-spacing:4px;
+    letter-spacing: 4px;
 
     text-shadow:
-
-    0 0 15px rgba(255,255,255,.8);
-
+        0 0 15px rgba(255, 255, 255, 0.8);
 }
 
+h1 {
+    margin: 10px 0;
 
+    color: #ffffff;
 
-h1{
-
-    margin:10px 0;
-
-    font-size:clamp(28px,5vw,45px);
-
-    font-weight:1000;
-
+    font-size: clamp(28px, 5vw, 45px);
+    font-weight: 1000;
 
     text-shadow:
+        0 0 10px #ffffff,
+        0 0 25px #777777;
 
-    0 0 10px #ffffff,
-    0 0 25px #777;
-
+    animation: titleGlow 2s infinite alternate;
 }
 
-
-
-.subtitle{
-
-    color:var(--muted);
-
+.subtitle {
+    color: var(--muted);
 }
 
+/* ========================================
+   GAME CONTAINER
+======================================== */
 
+.game-container {
+    width: 100%;
 
+    display: grid;
 
+    grid-template-columns:
+        repeat(2, minmax(0, 330px));
 
+    justify-content: center;
 
-/* 16 GAME */
-
-.game-container{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,330px);
-
-    justify-content:center;
-
-    gap:25px;
-
+    gap: 25px;
 }
 
+/* ========================================
+   GAME BOX
+======================================== */
 
+.game-box {
+    position: relative;
 
+    width: 330px;
 
+    padding: 16px;
 
-
-
-/* KOTAK GAME */
-
-.game-box{
-
-    width:330px;
-
-    padding:16px;
-
-    border-radius:22px;
-
+    border-radius: 22px;
 
     background:
+        linear-gradient(
+            145deg,
+            rgba(35, 35, 35, 0.95),
+            rgba(8, 8, 8, 0.95)
+        );
 
-    linear-gradient(
-    145deg,
-    rgba(35,35,35,.95),
-    rgba(8,8,8,.95)
-    );
-
-
-    border:1px solid rgba(255,255,255,.15);
-
+    border: 1px solid var(--border);
 
     box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.7),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
 
-    0 15px 35px rgba(0,0,0,.7),
+    text-align: center;
 
-    inset 0 0 20px rgba(255,255,255,.05);
+    transition:
+        transform 0.35s,
+        box-shadow 0.35s;
 
-
-    text-align:center;
-
-
-    transition:.35s;
-
+    overflow: hidden;
 }
 
-
-
-.game-box:hover{
-
-    transform:translateY(-8px);
-
+.game-box:hover {
+    transform: translateY(-8px);
 
     box-shadow:
-
-    0 20px 45px rgba(0,0,0,.8),
-
-    0 0 25px rgba(255,255,255,.25);
-
+        0 20px 45px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.25);
 }
 
+/* ========================================
+   FOTO
+======================================== */
 
+.image-wrapper {
+    position: relative;
+    z-index: 2;
 
+    width: 100%;
+    height: 240px;
 
+    overflow: hidden;
 
+    border-radius: 16px;
 
-
-
-/* FOTO TETAP */
-
-.image-wrapper{
-
-    width:100%;
-
-    height:240px;
-
-    overflow:hidden;
-
-    border-radius:16px;
-
-    background:#000;
-
+    background: #000000;
 }
 
+.game-image {
+    width: 100%;
+    height: 100%;
 
+    display: block;
 
-.image-wrapper img{
+    object-fit: cover;
+    object-position: center;
 
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    object-position:center;
-
-    display:block;
-
-    transition:.4s;
-
+    transition: transform 0.4s;
 }
 
-
-
-.game-box:hover img{
-
-    transform:scale(1.05);
-
+.game-box:hover .game-image {
+    transform: scale(1.05);
 }
 
+/* ========================================
+   JUDUL GAME
+======================================== */
 
+.game-title {
+    position: relative;
+    z-index: 2;
 
+    margin-top: 15px;
 
+    color: #ffffff;
 
-
-
-
-/* JUDUL */
-
-.game-box h2{
-
-    margin:15px 0;
-
-    font-size:22px;
-
-    font-weight:900;
-
-
-    color:white;
-
+    font-size: 20px;
+    font-weight: 900;
 
     text-shadow:
-
-    0 0 10px rgba(255,255,255,.8);
-
+        0 0 10px rgba(255, 255, 255, 0.8);
 }
 
+/* ========================================
+   BUTTON GROUP
+======================================== */
 
+.button-group {
+    position: relative;
+    z-index: 2;
 
+    display: grid;
 
+    grid-template-columns: 1fr 1fr;
 
+    gap: 10px;
 
-
-
-/* BUTTON */
-
-.button-group{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:10px;
-
-    margin-top:15px;
-
+    margin-top: 15px;
 }
 
+/* ========================================
+   BUTTON
+======================================== */
 
+button {
+    border: none;
 
-button{
+    cursor: pointer;
 
-    border:none;
-
-    cursor:pointer;
-
-    font-family:inherit;
-
-    font-weight:900;
-
+    font-family: inherit;
+    font-weight: 900;
 }
 
+.btn {
+    position: relative;
 
+    height: 45px;
 
+    border-radius: 12px;
 
+    color: #ffffff;
 
-.btn{
+    overflow: hidden;
 
-    height:45px;
-
-    border-radius:12px;
-
-    color:white;
-
-    transition:.3s;
-
+    transition: transform 0.3s;
 }
 
-
-
-.btn:hover{
-
-    transform:scale(1.06);
-
+.btn:hover {
+    transform: scale(1.06);
 }
 
+.btn:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
 
+/* ========================================
+   SARAN BUTTON
+======================================== */
 
-
-
-
-
-.btn-saran{
-
+.btn-saran {
     background:
+        linear-gradient(
+            135deg,
+            #333333,
+            #ffffff
+        );
 
-    linear-gradient(
-    135deg,
-    #333333,
-    #ffffff
-    );
-
-
-    color:#000;
-
+    color: #000000;
 
     box-shadow:
-
-    0 0 15px rgba(255,255,255,.25);
-
+        0 0 15px rgba(255, 255, 255, 0.25);
 }
 
+/* ========================================
+   POLA BUTTON
+======================================== */
 
-
-
-
-.btn-pola{
-
+.btn-pola {
     background:
-
-    linear-gradient(
-    135deg,
-    #111111,
-    #555555
-    );
-
+        linear-gradient(
+            135deg,
+            #111111,
+            #555555
+        );
 
     box-shadow:
-
-    0 0 15px rgba(255,255,255,.2);
-
+        0 0 15px rgba(255, 255, 255, 0.2);
 }
 
+/* ========================================
+   CARD SHINE
+======================================== */
 
+.game-box::before {
+    content: "";
 
+    position: absolute;
 
+    top: -100%;
+    left: -150%;
 
-
-
-/* MOBILE */
-
-@media(max-width:750px){
-
-
-    .game-container{
-
-        grid-template-columns:330px;
-
-    }
-
-
-}
-
-
-
-@media(max-width:360px){
-
-
-    .game-box{
-
-        width:100%;
-
-    }
-
-
-}/* EFEK KILAT BACKGROUND */
-
-body::before{
-
-    content:"";
-
-    position:fixed;
-
-    inset:0;
+    width: 80%;
+    height: 300%;
 
     background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.12),
+            transparent
+        );
 
-    radial-gradient(circle,
-    rgba(255,255,255,.18),
-    transparent 35%);
+    transform: rotate(25deg);
 
-    opacity:0;
+    animation: shine 5s infinite;
 
-    pointer-events:none;
+    pointer-events: none;
 
-    animation:kilat 5s infinite;
-
+    z-index: 1;
 }
 
-
-@keyframes kilat{
-
-    0%,85%,100%{
-
-        opacity:0;
-
+@keyframes shine {
+    0% {
+        left: -150%;
     }
 
-
-    88%{
-
-        opacity:.8;
-
+    40%,
+    100% {
+        left: 150%;
     }
-
-
-    90%{
-
-        opacity:0;
-
-    }
-
-
-    92%{
-
-        opacity:.5;
-
-    }
-
-
-    94%{
-
-        opacity:0;
-
-    }
-
-}/* =========================
-   PREMIUM EFFECT
-========================= */
-
-
-/* BACKGROUND GERAK */
-
-body{
-
-    overflow-x:hidden;
-
 }
 
+/* ========================================
+   BUTTON SHINE
+======================================== */
 
+.btn::after {
+    content: "";
 
-body::before{
+    position: absolute;
 
-    content:"";
+    top: 0;
+    left: -100%;
 
-    position:fixed;
-
-    inset:-50%;
+    width: 70%;
+    height: 100%;
 
     background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.7),
+            transparent
+        );
 
-    radial-gradient(circle,
-    rgba(255,255,255,.12),
-    transparent 35%);
+    animation: buttonLight 3s infinite;
 
-
-    animation:bgMove 8s infinite alternate;
-
-    pointer-events:none;
-
-    z-index:-1;
-
+    pointer-events: none;
 }
 
-
-
-@keyframes bgMove{
-
-    from{
-
-        transform:translate(-5%,-5%);
-
+@keyframes buttonLight {
+    0% {
+        left: -100%;
     }
 
-
-    to{
-
-        transform:translate(5%,5%);
-
+    50%,
+    100% {
+        left: 150%;
     }
-
 }
 
-
-
-
-
-/* CARD GLOW */
-
-.game-box{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.game-box::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:-100%;
-
-    left:-100%;
-
-    width:200%;
-
-    height:200%;
-
-
-    background:
-
-    linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,.25),
-    transparent
-    );
-
-
-    transform:rotate(25deg);
-
-    animation:shine 5s infinite;
-
-}
-
-
-
-@keyframes shine{
-
-    0%{
-
-        left:-150%;
-
-    }
-
-
-    40%,100%{
-
-        left:150%;
-
-    }
-
-}
-
-
-
-
-
-/* BUTTON BERKILAU */
-
-.btn{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-.btn::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:-100%;
-
-    width:70%;
-
-    height:100%;
-
-
-    background:
-
-    linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,.7),
-    transparent
-    );
-
-
-    animation:buttonLight 3s infinite;
-
-}
-
-
-
-@keyframes buttonLight{
-
-    0%{
-
-        left:-100%;
-
-    }
-
-
-    50%,100%{
-
-        left:150%;
-
-    }
-
-}
-
-
-
-
-/* JUDUL BERDENYUT */
-
-h1{
-
-    animation:titleGlow 2s infinite alternate;
-
-}
-
-
-
-@keyframes titleGlow{
-
-    from{
-
+/* ========================================
+   TITLE GLOW
+======================================== */
+
+@keyframes titleGlow {
+    from {
         text-shadow:
-        0 0 10px white;
-
+            0 0 10px #ffffff;
     }
 
-
-    to{
-
+    to {
         text-shadow:
-        0 0 30px white,
-        0 0 50px #888;
+            0 0 30px #ffffff,
+            0 0 50px #888888;
+    }
+}
 
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .game-container {
+        grid-template-columns:
+            minmax(0, 330px);
+    }
+
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 370px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+
+    .game-box {
+        width: 100%;
+    }
+
+    .button-group {
+        grid-template-columns: 1fr;
     }
 
 }
